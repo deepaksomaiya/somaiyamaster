@@ -1,0 +1,813 @@
+//=======================Font search =====================
+// Marcellus
+// FiraSans Medium
+// FiraSans Regular
+//=======================Font search =====================
+
+//Desktop
+@media (max-width:1920px) {
+    :root {
+        --font48: 48px;
+        --font38: 38px;
+        --font36: 36px;
+        --font32: 32px;
+        --font28: 28px;
+        --font24: 24px;
+        --font22: 22px;
+        --font20: 20px;
+        --font18: 18px;
+        --font16: 16px;
+        --font14: 14px;
+        --font12: 12px;
+        --font11: 11px;
+    }
+}
+
+//Laptops
+@media (max-width:1280px) {
+    :root {
+        --font48: 44px;
+        --font38: 34px;
+        --font36: 34px;
+        --font32: 28px;
+        --font28: 26px;
+        --font24: 22px;
+        --font22: 20px;
+        --font20: 18px;
+        --font18: 16px;
+        --font16: 15px;
+        --font14: 14px;
+        --font12: 12px;
+        --font11: 11px;
+    }
+}
+
+//tablet landsscape
+@media (max-width:1024px) {
+    :root {
+        --font48: 40px;
+        --font38: 30px;
+        --font36: 28px;
+        --font32: 26px;
+        --font28: 24px;
+        --font24: 22px;
+        --font22: 20px;
+        --font20: 18px;
+        --font18: 16px;
+        --font16: 14px;
+        --font14: 13px;
+        --font12: 12px;
+        --font11: 11px;
+    }
+}
+
+//Mobile landsscape
+@media (max-width:767px) {
+    :root {
+        --font48: 36px;
+        --font38: 28px;
+        --font36: 26px;
+        --font32: 24px;
+        --font28: 22px;
+        --font24: 20px;
+        --font22: 18px;
+        --font20: 16px;
+        --font18: 16px;
+        --font16: 14px;
+        --font14: 13px;
+        --font12: 12px;
+        --font11: 11px;
+    }
+}
+
+//mobile portrait
+@media (max-width:480px) {
+    :root {
+        --font48: 24px;
+        --font38: 22px;
+        --font36: 22px;
+        --font32: 20px;
+        --font28: 20px;
+        --font24: 18px;
+        --font22: 18px;
+        --font20: 16px;
+        --font18: 16px;
+        --font16: 14px;
+        --font14: 13px;
+        --font12: 12px;
+        --font11: 11px;
+    }
+}
+
+//smallmobile portrait
+@media (max-width:360px) {
+    :root {
+        --font48: 24px;
+        --font38: 22px;
+        --font36: 22px;
+        --font32: 20px;
+        --font28: 20px;
+        --font24: 18px;
+        --font22: 18px;
+        --font20: 16px;
+        --font18: 16px;
+        --font16: 14px;
+        --font14: 13px;
+        --font12: 12px;
+        --font11: 11px;
+    }
+}
+
+body {
+
+    //========================================
+    //              Marcellus
+    //======================================== 
+    .redf48marcellus-mb {
+        margin-bottom: 30px;
+
+        @media (max-width:767px) {
+            margin-bottom: 15px;
+        }
+    }
+
+    .darkf48marcellus-mb {
+        margin-bottom: 30px;
+
+        @media (max-width:767px) {
+            margin-bottom: 15px;
+        }
+    }
+
+
+    .redf48marcellus {
+        font-family: $headingff;
+        font-size: var(--font48, 48px);
+        line-height: 1.4;
+        color: $redcolor;
+    }
+
+    .darkf48marcellus {
+        font-family: $headingff;
+        font-size: var(--font48, 48px);
+        line-height: 1.4;
+        color: $blackcolor;
+    }
+
+    .greyf48marcellus {
+        font-family: $headingff;
+        font-size: var(--font48, 48px);
+        line-height: 1.4;
+        color: $greycolor;
+    }
+
+    .lightf48marcellus {
+        font-family: $headingff;
+        font-size: var(--font48, 48px);
+        line-height: 1.4;
+        color: $whitecolor;
+    }
+
+    //========================================
+    .redf38marcellus {
+        font-family: $headingff;
+        font-size: var(--font38, 38px);
+        line-height: 1.4;
+        color: $redcolor;
+    }
+
+    .darkf38marcellus {
+        font-family: $headingff;
+        font-size: var(--font38, 38px);
+        line-height: 1.4;
+        color: $blackcolor;
+    }
+
+    .greyf38marcellus {
+        font-family: $headingff;
+        font-size: var(--font38, 38px);
+        line-height: 1.4;
+        color: $greycolor;
+    }
+
+    .lightf38marcellus {
+        font-family: $headingff;
+        font-size: var(--font38, 38px);
+        line-height: 1.4;
+        color: $whitecolor;
+    }
+
+    //========================================
+    .redf36marcellus {
+        font-family: $headingff;
+        font-size: var(--font36, 36px);
+        line-height: 1.4;
+        color: $redcolor;
+    }
+
+    .darkf36marcellus {
+        font-family: $headingff;
+        font-size: var(--font36, 36px);
+        line-height: 1.4;
+        color: $blackcolor;
+    }
+
+    .greyf36marcellus {
+        font-family: $headingff;
+        font-size: var(--font36, 36px);
+        line-height: 1.4;
+        color: $greycolor;
+    }
+
+    .lightf36marcellus {
+        font-family: $headingff;
+        font-size: var(--font36, 36px);
+        line-height: 1.4;
+        color: $whitecolor;
+    }
+
+    //========================================
+    .redf32marcellus {
+        font-family: $headingff;
+        font-size: var(--font32, 32px);
+        line-height: 1.4;
+        color: $redcolor;
+    }
+
+    .darkf32marcellus {
+        font-family: $headingff;
+        font-size: var(--font32, 32px);
+        line-height: 1.4;
+        color: $blackcolor;
+    }
+
+    .greyf32marcellus {
+        font-family: $headingff;
+        font-size: var(--font32, 32px);
+        line-height: 1.4;
+        color: $greycolor;
+    }
+
+    .lightf32marcellus {
+        font-family: $headingff;
+        font-size: var(--font32, 32px);
+        line-height: 1.4;
+        color: $whitecolor;
+    }
+
+    //========================================
+    .redf28marcellus {
+        font-family: $headingff;
+        font-size: var(--font28, 28px);
+        line-height: 1.4;
+        color: $redcolor;
+    }
+
+    .darkf28marcellus {
+        font-family: $headingff;
+        font-size: var(--font28, 28px);
+        line-height: 1.4;
+        color: $blackcolor;
+    }
+
+    .greyf28marcellus {
+        font-family: $headingff;
+        font-size: var(--font28, 28px);
+        line-height: 1.4;
+        color: $greycolor;
+    }
+
+    .lightf28marcellus {
+        font-family: $headingff;
+        font-size: var(--font28, 28px);
+        line-height: 1.4;
+        color: $whitecolor;
+    }
+
+    //========================================
+    .redf24marcellus {
+        font-family: $headingff;
+        font-size: var(--font24, 24px);
+        line-height: 1.4;
+        color: $redcolor;
+    }
+
+    .darkf24marcellus {
+        font-family: $headingff;
+        font-size: var(--font24, 24px);
+        line-height: 1.4;
+        color: $blackcolor;
+    }
+
+    .greyf24marcellus {
+        font-family: $headingff;
+        font-size: var(--font24, 24px);
+        line-height: 1.4;
+        color: $greycolor;
+    }
+
+    .lightf24marcellus {
+        font-family: $headingff;
+        font-size: var(--font24, 24px);
+        line-height: 1.4;
+        color: $whitecolor;
+    }
+
+    //========================================
+    //           FiraSans Medium
+    //========================================
+
+    .redf38firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font38, 38px);
+        line-height: 1.4;
+        color: $redcolor;
+    }
+
+    .darkf38firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font38, 38px);
+        line-height: 1.4;
+        color: $blackcolor;
+    }
+
+    .greyf38firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font38, 38px);
+        line-height: 1.4;
+        color: $greycolor;
+    }
+
+    .lightf38firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font38, 38px);
+        line-height: 1.4;
+        color: $whitecolor;
+    }
+
+    //========================================
+    .redf36firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font36, 36px);
+        line-height: 1.4;
+        color: $redcolor;
+    }
+
+    .darkf36firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font36, 36px);
+        line-height: 1.4;
+        color: $blackcolor;
+    }
+
+    .greyf36firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font36, 36px);
+        line-height: 1.4;
+        color: $greycolor;
+    }
+
+    .lightf36firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font36, 36px);
+        line-height: 1.4;
+        color: $whitecolor;
+    }
+
+    //========================================
+    .redf32firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font32, 32px);
+        line-height: 1.4;
+        color: $redcolor;
+    }
+
+    .darkf32firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font32, 32px);
+        line-height: 1.4;
+        color: $blackcolor;
+    }
+
+    .greyf32firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font32, 32px);
+        line-height: 1.4;
+        color: $greycolor;
+    }
+
+    .lightf32firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font32, 32px);
+        line-height: 1.4;
+        color: $whitecolor;
+    }
+
+    //========================================
+    .redf28firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font28, 28px);
+        line-height: 1.4;
+        color: $redcolor;
+    }
+
+    .darkf28firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font28, 28px);
+        line-height: 1.4;
+        color: $blackcolor;
+    }
+
+    .greyf28firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font28, 28px);
+        line-height: 1.4;
+        color: $greycolor;
+    }
+
+    .lightf28firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font28, 28px);
+        line-height: 1.4;
+        color: $whitecolor;
+    }
+
+    //========================================
+    .redf24firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font24, 24px);
+        line-height: 1.4;
+        color: $redcolor;
+    }
+
+    .darkf24firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font24, 24px);
+        line-height: 1.4;
+        color: $blackcolor;
+    }
+
+    .greyf24firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font24, 24px);
+        line-height: 1.4;
+        color: $greycolor;
+    }
+
+    .lightf24firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font24, 24px);
+        line-height: 1.4;
+        color: $whitecolor;
+    }
+
+    //========================================
+    .redf22firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font22, 22px);
+        line-height: 1.4;
+        color: $redcolor;
+    }
+
+    .darkf22firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font22, 22px);
+        line-height: 1.4;
+        color: $blackcolor;
+    }
+
+    .greyf22firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font22, 22px);
+        line-height: 1.4;
+        color: $greycolor;
+    }
+
+    .lightf22firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font22, 22px);
+        line-height: 1.4;
+        color: $whitecolor;
+    }
+
+    //========================================
+    .redf20firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font20, 20px);
+        line-height: 1.4;
+        color: $redcolor;
+    }
+
+    .darkf20firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font20, 20px);
+        line-height: 1.4;
+        color: $blackcolor;
+    }
+
+    .greyf20firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font20, 20px);
+        line-height: 1.4;
+        color: $greycolor;
+    }
+
+    .lightf20firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font20, 20px);
+        line-height: 1.4;
+        color: $whitecolor;
+    }
+
+    //========================================
+    .redf18firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font18, 18px);
+        line-height: 1.4;
+        color: $redcolor;
+    }
+
+    .darkf18firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font18, 18px);
+        line-height: 1.4;
+        color: $blackcolor;
+    }
+
+    .greyf18firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font18, 18px);
+        line-height: 1.4;
+        color: $greycolor;
+    }
+
+    .lightf18firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font18, 18px);
+        line-height: 1.4;
+        color: $whitecolor;
+    }
+
+    //========================================
+    .redf16firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font16, 16px);
+        line-height: 1.4;
+        color: $redcolor;
+    }
+
+    .darkf16firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font16, 16px);
+        line-height: 1.4;
+        color: $blackcolor;
+    }
+
+    .greyf16firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font16, 16px);
+        line-height: 1.4;
+        color: $greycolor;
+    }
+
+    .lightf16firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font16, 16px);
+        line-height: 1.4;
+        color: $whitecolor;
+    }
+
+    //========================================
+    .redf14firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font14, 14px);
+        line-height: 1.4;
+        color: $redcolor;
+    }
+
+    .darkf14firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font14, 14px);
+        line-height: 1.4;
+        color: $blackcolor;
+    }
+
+    .greyf14firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font14, 14px);
+        line-height: 1.4;
+        color: $greycolor;
+    }
+
+    .lightf14firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font14, 14px);
+        line-height: 1.4;
+        color: $whitecolor;
+    }
+
+    //========================================
+    .redf11firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font11, 11px);
+        line-height: 1.4;
+        color: $redcolor;
+    }
+
+    .darkf11firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font11, 11px);
+        line-height: 1.4;
+        color: $blackcolor;
+    }
+
+    .greyf11firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font11, 11px);
+        line-height: 1.4;
+        color: $greycolor;
+    }
+
+    .lightf11firamd {
+        font-family: $paragraphmediumfff;
+        font-size: var(--font11, 11px);
+        line-height: 1.4;
+        color: $whitecolor;
+    }
+
+    //========================================
+    //           FiraSans Regular
+    //========================================
+    .redf24firarg {
+        font-family: $paragraphff;
+        font-size: var(--font24, 24px);
+        line-height: 1.7;
+        color: $redcolor;
+    }
+
+    .darkf24firarg {
+        font-family: $paragraphff;
+        font-size: var(--font24, 24px);
+        line-height: 1.7;
+        color: $paracolor;
+    }
+
+    .greyf24firarg {
+        font-family: $paragraphff;
+        font-size: var(--font24, 24px);
+        line-height: 1.7;
+        color: $greycolor;
+    }
+
+    .lightf24firarg {
+        font-family: $paragraphff;
+        font-size: var(--font24, 24px);
+        line-height: 1.7;
+        color: $whitecolor;
+    }
+
+    //========================================
+    .redf22firarg {
+        font-family: $paragraphff;
+        font-size: var(--font22, 22px);
+        line-height: 1.7;
+        color: $redcolor;
+    }
+
+    .darkf22firarg {
+        font-family: $paragraphff;
+        font-size: var(--font22, 22px);
+        line-height: 1.7;
+        color: $paracolor;
+    }
+
+    .greyf22firarg {
+        font-family: $paragraphff;
+        font-size: var(--font22, 22px);
+        line-height: 1.7;
+        color: $greycolor;
+    }
+
+    .lightf22firarg {
+        font-family: $paragraphff;
+        font-size: var(--font22, 22px);
+        line-height: 1.7;
+        color: $whitecolor;
+    }
+
+    //========================================
+    .redf20firarg {
+        font-family: $paragraphff;
+        font-size: var(--font20, 20px);
+        line-height: 1.7;
+        color: $redcolor;
+    }
+
+    .darkf20firarg {
+        font-family: $paragraphff;
+        font-size: var(--font20, 20px);
+        line-height: 1.7;
+        color: $paracolor;
+    }
+
+    .greyf20firarg {
+        font-family: $paragraphff;
+        font-size: var(--font20, 20px);
+        line-height: 1.7;
+        color: $greycolor;
+    }
+
+    .lightf20firarg {
+        font-family: $paragraphff;
+        font-size: var(--font20, 20px);
+        line-height: 1.7;
+        color: $whitecolor;
+    }
+
+    //========================================
+    .redf18firarg {
+        font-family: $paragraphff;
+        font-size: var(--font18, 18px);
+        line-height: 1.7;
+        color: $redcolor;
+    }
+
+    .darkf18firarg {
+        font-family: $paragraphff;
+        font-size: var(--font18, 18px);
+        line-height: 1.7;
+        color: $paracolor;
+    }
+
+    .greyf18firarg {
+        font-family: $paragraphff;
+        font-size: var(--font18, 18px);
+        line-height: 1.7;
+        color: $greycolor;
+    }
+
+    .lightf18firarg {
+        font-family: $paragraphff;
+        font-size: var(--font18, 18px);
+        line-height: 1.7;
+        color: $whitecolor;
+    }
+
+    //========================================
+    .redf16firarg {
+        font-family: $paragraphff;
+        font-size: var(--font16, 16px);
+        line-height: 1.7;
+        color: $redcolor;
+    }
+
+    .darkf16firarg {
+        font-family: $paragraphff;
+        font-size: var(--font16, 16px);
+        line-height: 1.7;
+        color: $paracolor;
+    }
+
+    .greyf16firarg {
+        font-family: $paragraphff;
+        font-size: var(--font16, 16px);
+        line-height: 1.7;
+        color: $greycolor;
+    }
+
+    .lightf16firarg {
+        font-family: $paragraphff;
+        font-size: var(--font16, 16px);
+        line-height: 1.7;
+        color: $whitecolor;
+    }
+
+    //========================================
+    .redf14firarg {
+        font-family: $paragraphff;
+        font-size: var(--font14, 14px);
+        line-height: 1.7;
+        color: $redcolor;
+    }
+
+    .darkf14firarg {
+        font-family: $paragraphff;
+        font-size: var(--font14, 14px);
+        line-height: 1.7;
+        color: $paracolor;
+    }
+
+    .greyf14firarg {
+        font-family: $paragraphff;
+        font-size: var(--font14, 14px);
+        line-height: 1.7;
+        color: $greycolor;
+    }
+
+    .lightf14firarg {
+        font-family: $paragraphff;
+        font-size: var(--font14, 14px);
+        line-height: 1.7;
+        color: $whitecolor;
+    }
+}

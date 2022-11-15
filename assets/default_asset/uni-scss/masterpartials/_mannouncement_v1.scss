@@ -1,0 +1,107 @@
+:root {
+    --containermargin: 50px;
+}
+
+.hidebs4 {
+    display: none;
+}
+
+.svv-announcementintro-section {
+    position: relative;
+    margin-bottom: 30px;
+
+    .announcementintro-shadow {
+        .announcementintro-contain {
+            position: relative;
+            width: calc(100% - var(--containermargin));
+            padding: 50px 0% 50px calc(5% + 15px);
+            margin-right: var(--containermargin);
+            box-shadow: 0 3px 20px 0px #0000001a;
+
+
+            @media (min-width:1600px) {
+                padding: 50px 0% 50px calc(calc(100% - 1500px) / 2);
+            }
+
+            .darkf48marcellus {
+                margin-bottom: 20px;
+            }
+
+            .darkf24firarg {
+                max-width: 80%;
+            }
+        }
+
+        .announcementintro-l {
+            position: absolute;
+            width: 250px;
+            height: 250px;
+            right: 0;
+            top: 0;
+            display: flex;
+            z-index: 9;
+            pointer-events: none;
+
+            .svv-red {
+                width: var(--containermargin);
+                height: var(--containermargin);
+                display: block;
+                background-color: #f00;
+            }
+
+            .svv-darkred {
+                position: relative;
+                width: calc(250px - var(--containermargin));
+                height: 100%;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: var(--containermargin);
+                    background-color: #cb001c;
+                    right: 0;
+                    top: 0;
+                }
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: var(--containermargin);
+                    height: 100%;
+                    background-color: #cb001c;
+                    right: 0;
+                    top: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    :root {
+        --containermargin: 30px;
+    }
+
+    .svv-announcementintro-section {
+        .announcementintro-shadow {
+            .announcementintro-l {
+                width: 150px;
+                height: 200px;
+
+                .svv-darkred {
+                    width: calc(150px - var(--containermargin));
+                }
+            }
+
+            .announcementintro-contain {
+                padding: 50px 15px;
+
+                .darkf24firarg {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+}

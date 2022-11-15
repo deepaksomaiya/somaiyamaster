@@ -1,0 +1,53 @@
+* {
+    overflow: initial;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    text-align: center;
+    width: 100%;
+    background-color: #f3f3f3;
+}
+
+.header h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    text-align: center;
+    width: 100%;
+    background-color: #ccc;
+}
+
+.footer h1 {
+    width: 100%;
+    text-align: center;
+}
+
+
+.typographysection {
+    .container {
+        max-width: 90%;
+    }
+
+    .svv-card-border {
+        padding: 30px 10px;
+        text-align: center;
+
+        &:nth-child(4n) {
+            background-color: #333;
+            border: 1px solid #000;
+        }
+    }
+
+}

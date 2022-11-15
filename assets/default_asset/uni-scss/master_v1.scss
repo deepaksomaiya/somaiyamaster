@@ -1,0 +1,25 @@
+@import "masterpartials/mvariables_v1";
+@import "masterpartials/mreset_v1";
+
+//need to be removed in live
+@import "masterpartials/mfaltu_v1";
+@import "../css/bootstrap4.min.css";
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css";
+@import "../css/animate.min.css";
+@import "../css/slick.min.css";
+@import "../css/select2.min.css";
+//need to be removed in live
+
+@import "masterpartials/mfonts_v1";
+
+//need to be removed in live
+@import "sectionscss/branding-header";
+@import "sectionscss/branding-footer";
+@import "masterpartials/mfonts_local_v1";
+//need to be removed in live
+
+@import "masterpartials/melements_v1";
+@import "masterpartials/mcomponents_v1";
+@import "masterpartials/mtypography_v1";
+@import "masterpartials/mannouncement_v1";
+@import "masterpartials/mresponsive_v1";

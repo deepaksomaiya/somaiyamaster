@@ -1,0 +1,1596 @@
+// ************Search Text *****************
+// SECTIONS CSS
+// EDITOR CSS
+// CARDS CSS 
+// SVV COMMON TABS CSS
+// SVV BANNER TABS CSS
+// SVV USERCARDS CSS
+// SVV USER DIRECTORY CSS 
+// SVV ACCORDION CSS 
+// SIDEBAR LINKS SECTION CSS
+// ************Search Text ***************** 
+
+// ===================================== SECTIONS CSS START ==================================
+.sectionp50 {
+    padding: 50px 0;
+    width: 100%;
+    margin: 0px !important;
+
+    @media (max-width:767px) {
+        padding: 30px 0px;
+    }
+}
+
+.sectionm50 {
+    margin: 50px 0;
+    width: 100%;
+
+    @media (max-width:767px) {
+        margin: 30px 0px;
+    }
+}
+
+// ===================================== SECTIONS CSS ENDS =====================================
+
+// ===================================== EDITOR CSS START ====================================
+.svv-richtext {
+    .svv-orderlist {
+        counter-reset: orderlist;
+
+        &>li {
+            position: relative;
+            font-size: var(--font18, 18px);
+            line-height: 1.7;
+            color: #58595b;
+            font-family: $paragraphff;
+            margin-bottom: 15px;
+            padding-left: 15px;
+
+            &:before {
+                counter-increment: orderlist;
+                content: counter(orderlist);
+                position: absolute;
+                top: 0px;
+                left: 1px;
+            }
+        }
+    }
+
+    .svv-list-disc {
+        &>li {
+            position: relative;
+            font-size: var(--font18, 18px);
+            line-height: 1.7;
+            color: #58595b;
+            font-family: $paragraphff;
+            margin-bottom: 15px;
+            padding-left: 15px;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 10px;
+                left: 1px;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: #58595b;
+            }
+
+            @media screen and (max-width: 768px) {
+                font-size: 16px;
+                line-height: 26px;
+
+                &:before {
+                    top: 8px;
+                }
+            }
+        }
+    }
+
+    .svv-list-circle {
+        &>li {
+            position: relative;
+            font-size: var(--font18, 18px);
+            line-height: 1.7;
+            color: #58595b;
+            font-family: $paragraphff;
+            font-weight: 300;
+            margin-bottom: 15px;
+            padding-left: 15px;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 10px;
+                left: 1px;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                border: 1px solid #000;
+                border-color: #58595b;
+            }
+
+            @media screen and (max-width: 768px) {
+                font-size: 16px;
+                line-height: 26px;
+
+                &:before {
+                    top: 8px;
+                }
+            }
+        }
+    }
+
+    .svv-list-icon {
+        &>li {
+            position: relative;
+            font-size: var(--font18, 18px);
+            line-height: 1.7;
+            color: #58595b;
+            font-family: $paragraphff;
+            font-weight: 300;
+            margin-bottom: 15px;
+            padding-left: 15px;
+
+            &:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            @media screen and (max-width: 768px) {
+                font-size: 16px;
+                line-height: 26px;
+
+                &:before {
+                    top: 4px;
+                }
+            }
+        }
+    }
+
+    .svv-list-icon.svv-list-img {
+        &>li {
+            &:before {
+                content: "";
+                top: 10px;
+                background-image: url('../../default_asset/img/icons/red-arrow45.svg');
+                width: 10px;
+                height: 10px;
+                background-size: cover;
+            }
+        }
+    }
+
+    .svv-list-icon.svv-list-icon-fa {
+        &>li {
+            &:before {
+                content: "\f105";
+                font-family: "FontAwesome";
+                color: #000;
+                font-size: inherit;
+                line-height: 10px;
+                top: 10px;
+            }
+        }
+    }
+
+    p {
+        font-size: var(--font18, 18px);
+        font-family: $paragraphff;
+        margin-bottom: 15px;
+    }
+
+    b,
+    strong {
+        color: #000;
+        font-family: "FiraSans-Medium", sans-serif;
+    }
+}
+
+/*** Rich text start**/
+.svv-ckeditor {
+    h1 {
+        font-size: var(--font36, 36px);
+        margin-bottom: 25px;
+    }
+
+    h2 {
+        font-size: var(--font32, 32px);
+        margin-bottom: 25px;
+    }
+
+    h3 {
+        font-size: var(--font28, 28px);
+        margin-bottom: 25px;
+    }
+
+    h4 {
+        font-size: var(--font24, 24px);
+        margin-bottom: 15px;
+    }
+
+    h5 {
+        font-size: var(--font22, 22px);
+        margin-bottom: 15px;
+    }
+
+    h6 {
+        font-size: var(--font20, 20px);
+        margin-bottom: 15px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "FiraSans-Medium";
+    }
+
+    p {
+        font-size: var(--font18, 18px);
+        font-family: $paragraphff;
+        margin-bottom: 15px;
+    }
+
+    b,
+    strong {
+        color: #000;
+        font-family: "FiraSans-Medium", sans-serif;
+    }
+
+    ol {
+        counter-reset: orderlist;
+
+        li {
+            position: relative;
+            font-size: var(--font18, 18px);
+            line-height: 1.7;
+            color: #000000;
+            font-family: $paragraphff;
+            margin-bottom: 10px;
+            padding-left: 15px;
+
+            &:before {
+                counter-increment: orderlist;
+                content: counter(orderlist);
+                position: absolute;
+                top: 0px;
+                left: 1px;
+            }
+        }
+    }
+
+    ul {
+        li {
+            position: relative;
+            font-size: var(--font18, 18px);
+            line-height: 1.7;
+            color: #000000;
+            font-family: $paragraphff;
+            font-weight: 300;
+            margin-bottom: 10px;
+            padding-left: 15px;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 11px;
+                left: 1px;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                border: 1px solid #000;
+                background-color: #000000;
+            }
+
+            @media screen and (max-width: 768px) {
+                font-size: 16px;
+                line-height: 26px;
+
+                &:before {
+                    top: 8px;
+                }
+            }
+        }
+    }
+
+    a {
+        text-decoration: underline;
+        font-family: "Firasans-Regular";
+        color: $linkblue;
+        transition: 0.5s;
+        background-color: #fff0;
+        border: 0px;
+        padding: 0px;
+        outline: none !important;
+
+        span {
+            color: $linkblue;
+        }
+
+        &:hover {
+            color: $linkdarkblue;
+            text-decoration: none;
+
+            span {
+                color: $linkdarkblue;
+            }
+        }
+
+        img {
+            height: 15px;
+            width: 15px;
+            margin-left: 4px;
+        }
+    }
+
+    table {
+        box-shadow: 3px 3px 25px #0000001f;
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        tr {
+            border-bottom: 1px solid #DEE2E6;
+
+            &:nth-child(even) {
+                background-color: #E7E8E980;
+                position: relative;
+
+                &::before {
+                    content: '';
+
+                }
+
+                &::after {
+                    content: '';
+
+                }
+            }
+
+            &:nth-child(odd) {
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: -5px;
+                    left: 0;
+                    width: 100%;
+                    height: 10px;
+                    background-image: url(/assets/polytechnique/images/library/dot.svg);
+                    background-repeat: repeat;
+                    background-size: contain;
+                    z-index: 10;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -2px;
+                    left: 0;
+                    width: 100%;
+                    height: 10px;
+                    background-image: url(/assets/polytechnique/images/library/dot.svg);
+                    background-repeat: repeat;
+                    background-size: contain;
+                    z-index: 10;
+                }
+            }
+
+            th {
+                padding: 12px;
+                vertical-align: top;
+                font-family: 'FiraSans-Light';
+                color: #000000;
+            }
+
+            td {
+                padding: 12px;
+                vertical-align: top;
+                font-family: 'FiraSans-Light';
+                color: #000000;
+            }
+        }
+    }
+}
+
+/*** Rich text end**/
+
+// ===================================== EDITOR CSS START ====================================
+
+// ===================================== CARDS CSS START ====================================
+.svv-card {
+    padding: 30px;
+    box-shadow: 0px 8px 16px 0px #00000026;
+
+    @media screen and (max-width: 767px) {
+        padding: 15px;
+    }
+}
+
+.svv-card-border {
+    padding: 30px;
+    border: 1px solid #ccc;
+
+    @media screen and (max-width: 767px) {
+        padding: 15px;
+    }
+}
+
+// ===================================== CARDS CSS ENDS ====================================
+
+//+++++++++++++++++++++++++++++++++++++++++++++ SVV COMMON TABS STARTS +++++++++++++++++++++++++++
+.svvtabs-wrapper {
+    .svvtabs-toggle {
+        display: none;
+
+        @media screen and (max-width: 768px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            width: 100%;
+            background-color: #f3f3f3;
+            padding: 15px 50px 15px 15px;
+
+            p.svvtablinkactivename {
+                font-family: "Fira Sans", sans-serif;
+                font-size: 16px;
+                font-weight: 400;
+                color: #58595b;
+                opacity: .8;
+                text-align: left;
+                width: 100%;
+            }
+        }
+
+        .svvtabs-toggle-icon {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            right: 9px;
+            top: 9px;
+            background-color: #ccc;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+
+
+            i {
+                color: #000;
+            }
+
+            .fa-angle-up {
+                display: none;
+            }
+
+            .fa-angle-down {
+                display: block;
+            }
+        }
+    }
+
+    .simpletabs-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+
+        .svvtabs-item {
+            .svvsimpletab-link {
+                padding: 6px 45px;
+                display: inline-block;
+                position: relative;
+                border-right: 1px solid #ccc;
+                text-decoration: none !important;
+
+                span {
+                    position: relative;
+
+                    &:after {
+                        content: "";
+                        width: 100%;
+                        height: 2px;
+                        bottom: -4px;
+                        position: absolute;
+                        display: inline-block;
+                        left: 0;
+                        transform: scaleX(0);
+                        background-color: $blackcolor;
+                        transition: 0.4s;
+                    }
+                }
+
+                &:hover {
+                    span {
+                        &:after {
+                            transform: scaleX(1);
+                        }
+                    }
+
+                }
+            }
+
+            .svvsimpletab-link.active {
+                color: $redcolor;
+
+                span {
+                    color: $redcolor;
+                    position: relative;
+
+                    &:after {
+                        background-color: $redcolor;
+                        transform: scaleX(1);
+                    }
+
+                }
+            }
+
+            &:last-child {
+                .svvsimpletab-link {
+                    border-right: 1px solid #fff0;
+                }
+            }
+
+        }
+
+
+
+    }
+
+    .svv-tabslink {
+        position: relative;
+        z-index: 9;
+
+        @media screen and (max-width: 768px) {
+
+            .horizontaltabs-nav,
+            .verticaltabs-nav,
+            .verticalscrolltabs-nav {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: #fff;
+                border: 1px solid #ccc;
+                width: 100%;
+            }
+        }
+
+        .svvtabs-item {
+            position: relative;
+
+            .svvtabs-link {
+                display: block;
+                padding: 15px 15px 15px 15px;
+                cursor: pointer;
+                text-decoration: none !important;
+
+                span.svvtabs-span {
+                    width: 100%;
+                    font-size: 18px;
+                    font-family: "Fira Sans", sans-serif;
+                    font-weight: 400;
+                    color: #58595b;
+                    opacity: .8;
+                    text-align: left;
+
+                    @media screen and (max-width: 767px) {
+                        font-size: 16px;
+                    }
+
+                    img {
+                        margin-top: -2px;
+                        margin-left: 3px;
+                        display: inline-block;
+                    }
+                }
+
+
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
+            }
+
+            .svvtabs-link.active {
+                opacity: 1;
+
+                @media screen and (max-width: 768px) {
+                    border: 0px solid #ccc !important;
+                    cursor: pointer;
+                    padding: 15px 50px 15px 30px;
+                    display: none !important;
+                }
+
+            }
+        }
+    }
+
+    .svv-tabslink.active {
+        background-color: #ffffff;
+        border: 0px solid #ccc;
+
+        .svvtabs-toggle-icon {
+            .fa-angle-up {
+                display: block;
+            }
+
+            .fa-angle-down {
+                display: none;
+            }
+        }
+
+        .svvtabs-item {
+            .svvtabs-link {
+                display: block !important;
+            }
+        }
+    }
+
+}
+
+.svv-horizontaltabs-wrapper {
+    .horizontaltabslink {
+
+        .horizontaltabs-nav {
+
+            @media (max-width:768px) {
+                display: block;
+            }
+
+            .svvtabs-item {
+                .svvtabs-link {
+                    padding: 15px 30px 15px 30px;
+                    background-color: #e7e8e966;
+                    position: relative;
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        top: -1px;
+                        left: 0;
+                        width: 100%;
+                        height: 5px;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        display: none;
+                    }
+                }
+
+                .svvtabs-link.active {
+                    opacity: 1;
+                    background-color: #fff;
+                    border-left: 1px solid #00000033;
+                    border-right: 1px solid #00000033;
+
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        top: -1px;
+                        left: 0;
+                        width: 100%;
+                        height: 5px;
+                        background-color: #000000;
+
+                        @media (max-width:768px) {
+                            display: none;
+                        }
+
+                    }
+
+
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        bottom: -1px;
+                        left: 0;
+                        width: 100%;
+                        height: 1px;
+                        background-color: #ffffff;
+                        z-index: 1;
+                    }
+
+                    @media screen and (max-width: 768px) {
+                        border: 0px solid #ccc !important;
+                        cursor: pointer;
+                        padding: 15px 50px 15px 30px;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .horizontaltabs-card {
+        @media screen and (max-width: 768px) {
+            .horizontaltabscontent-row {
+                margin-top: 20px;
+            }
+        }
+
+        .horizontaltabscontentwrap {
+            position: relative;
+            padding: 30px;
+            border: 1px solid #ccc;
+
+            @media (max-width:767px) {
+                padding: 15px;
+            }
+        }
+    }
+}
+
+.svv-verticaltabs-wrapper {
+    .svvtabs-item {
+        position: relative;
+
+        .svvtabs-link.verticaltab-link,
+        .svvtabs-link.verticaltabscroll-link {
+            display: block;
+            padding: 15px 10px 15px 30px;
+            border-bottom: 1px solid #00000033;
+            border-left: 5px solid #fff0;
+            cursor: pointer;
+            text-decoration: none !important;
+
+            @media screen and (max-width: 768px) {
+                padding: 10px;
+                border-left: 0px solid #fff0;
+            }
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 17px;
+                transform: translate(-50%, -50%);
+                width: 5px;
+                height: 5px;
+                background: #58595b;
+                border-radius: 50%;
+
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
+
+            }
+
+            span.svvtabs-span {
+                width: 100%;
+                font-size: 18px;
+                font-family: "Fira Sans", sans-serif;
+                font-weight: 400;
+                color: #58595b;
+                opacity: .8;
+                text-align: left;
+
+                @media screen and (max-width: 767px) {
+                    font-size: 16px;
+                }
+
+                img {
+                    margin-top: -2px;
+                    margin-left: 3px;
+                    display: inline-block;
+                }
+            }
+
+            &:hover {
+                background-color: #eeefef80;
+            }
+
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+
+        .svvtabs-link.verticaltab-link.active,
+        .svvtabs-link.verticaltabscroll-link.active {
+            background-color: #eeefef;
+            opacity: 1;
+            border-left: 5px solid #000;
+
+            &:after {
+                content: "";
+                width: 18px;
+                height: 100%;
+                position: absolute;
+                background-image: url(../img/light-grey-traingle.svg);
+                right: -18px;
+                top: 0px;
+                background-repeat: no-repeat;
+                background-position: 50%;
+                z-index: -1;
+
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                border: 0px solid #ccc !important;
+                cursor: pointer;
+                padding: 10px;
+            }
+        }
+    }
+
+    .verticaltabs-card {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .verticaltabslink-col {
+            width: 25%;
+            width: calc(280px);
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+
+            .verticaltabslink-green {
+                .svvtabs-link.active {
+                    border-left: 5px solid #238121;
+                }
+            }
+
+        }
+
+        .verticaltabscontent-col {
+            width: 75%;
+            width: calc(100% - 280px);
+
+            .verticaltabscontentwrap {
+                padding-left: 50px;
+
+                @media screen and (max-width: 768px) {
+                    padding-left: 0px;
+                    margin-top: 20px;
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.svv-horizontalaccordiontabs-wrapper {
+    .horizontalaccordionhead {
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+
+    .svv-horizontalaccordiontabs-wrapper {
+        .horizontaltabslink-row {
+            display: none;
+        }
+
+        .horizontaltabscontent-row {
+            margin-top: 0px;
+
+            .horizontaltabscontentwrap {
+                padding: 0px;
+                border: 0px solid #fff0;
+
+                &>.tab-pane {
+                    display: block;
+                    opacity: 1;
+                    margin-bottom: 15px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    .horizontalaccordionhead {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 15px 50px 15px 15px;
+                        background-color: #f3f3f3;
+                        border-radius: 5px;
+                        position: relative;
+                        min-height: 58px;
+                        overflow-wrap: anywhere;
+
+                        .svvaccordion-toggle-icon {
+                            position: absolute;
+                            width: 40px;
+                            height: 40px;
+                            right: 9px;
+                            top: 9px;
+                            background-color: #ccc;
+                            border-radius: 5px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            z-index: 10;
+
+                            .fa-angle-up {
+                                display: none;
+                            }
+
+                            .fa-angle-down {
+                                display: block;
+                            }
+                        }
+                    }
+
+                    .horizontalaccordionhead.active {
+                        .svvaccordion-toggle-icon {
+                            .fa-angle-up {
+                                display: block;
+                            }
+
+                            .fa-angle-down {
+                                display: none;
+                            }
+                        }
+                    }
+
+                    .horizontalaccordionbody {
+                        padding: 10px;
+                        display: none;
+                    }
+
+                }
+
+                &>.tab-pane:nth-child(1) {
+                    .horizontalaccordionbody {
+                        display: block;
+                    }
+                }
+            }
+
+        }
+
+    }
+}
+
+//++++++++++++++++++++++++++++++++++++++++ SVV COMMON TABS ENDS +++++++++++++++++++++++++++
+
+//++++++++++++++++++++++++++++++++++++ SVV BANNER TABS CSS START +++++++++++++++++++++++++++
+@mixin bannertabscollapsed {
+    .svv-bannertabs-links-toggle {
+        display: block;
+        background-color: #f3f3f3;
+        padding: 10px 50px 10px 20px;
+        border-radius: 4px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        @media(max-width:767px) {
+            padding: 10px 50px 10px 10px;
+        }
+
+        .svv-bannertabs-toggleicon {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            height: 30px;
+            width: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #cccccc;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 13px;
+                height: 2px;
+                background-color: #000;
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 2px;
+                height: 13px;
+                background-color: #000;
+                transition: 0.5s;
+            }
+        }
+    }
+
+    .svv-bannertabs-links-toggle.active {
+        .svv-bannertabs-toggleicon {
+            &:after {
+                transform: translate(-50%, -50%) rotate(90deg);
+            }
+        }
+
+    }
+
+    .svv-bannertabs-linkslist {
+        position: absolute;
+        z-index: 9;
+        background-color: #fff;
+        display: none;
+        width: calc(100% - 30px);
+        top: 100%;
+        left: 15px;
+        margin: 0px;
+        box-shadow: 0px 10px 10px #00000029;
+
+        .svv-bannertabs-linklistitem {
+            border: 0px !important;
+
+            &:after {
+                display: none;
+            }
+
+            &:before {
+                display: none;
+            }
+
+            .svv-bannertabs-link {
+                flex-direction: row;
+                padding: 0px;
+                width: 100%;
+                align-items: center;
+                justify-content: flex-start;
+                border-bottom: 1px solid #ccc;
+
+                .iconbox {
+                    margin-bottom: 0px;
+                    width: 30px;
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    display: none;
+
+                    img {
+                        height: 20px;
+                        width: auto;
+                        max-width: 100%;
+                    }
+                }
+
+                .darkf18firamd {
+                    margin-bottom: 0px;
+                    min-height: 0px;
+                    padding: 10px;
+
+                }
+            }
+
+        }
+
+        .svv-bannertabs-linklistitem-dropdown {
+            .svv-bannertabs-link-dropdown {
+                position: relative;
+
+                .fa-angle-down {
+                    position: absolute;
+                    top: 50%;
+                    right: 10px;
+                    transform: translate(-50%, -50%);
+                }
+            }
+
+            .svv-bannertabs-link-content {
+                position: static;
+                box-shadow: 0 0 0 #fff0;
+
+                a {
+                    padding-left: 15px;
+                }
+            }
+        }
+    }
+
+    .svv-bannertabs-linkslist.active {
+        display: block;
+
+
+    }
+}
+
+.svv-bannertabssection {
+    margin: 0px;
+    margin-bottom: 50px;
+
+    .bannertabimg {
+        img {
+            width: 100%;
+        }
+    }
+
+    .svv-bannertabs-links-wrap {
+        position: relative;
+
+        @media (max-width:767px) {
+            position: sticky;
+            top: 0;
+            z-index: 99;
+        }
+
+        .svv-bannertabs-links-toggle {
+            display: none;
+        }
+
+        .svv-bannertabs-linkslist {
+            background-color: #FAFBFB;
+            position: relative;
+            margin-top: -100px;
+            display: flex;
+            align-items: stretch;
+            justify-content: space-between;
+
+            .svv-bannertabs-linklistitem {
+                flex: 1;
+                position: relative;
+                border-bottom: 10px solid #58595b1f;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #58595b1f;
+                }
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    transform: translate(-50%, -50%);
+                    height: 50%;
+                    background-color: #ccc;
+                    width: 1px;
+                }
+
+                .svv-bannertabs-link {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 35px 5px 15px 5px;
+                    position: relative;
+
+                    .iconbox {
+                        margin-bottom: 10px;
+
+                        .img {
+                            display: block;
+                        }
+
+                        .imghover {
+                            display: none;
+                        }
+                    }
+
+                    .darkf18firamd {
+                        text-align: center;
+                        min-height: 50px;
+                    }
+
+                    &:hover {
+                        .iconbox {
+                            .img {
+                                display: none;
+                            }
+
+                            .imghover {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+
+                &:last-child {
+                    &:before {
+                        display: none;
+                    }
+                }
+            }
+
+            .svv-bannertabs-linklistitem.active {
+
+                @media (max-width:480px) {
+                    display: none;
+                }
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    bottom: -10px;
+                    width: 100%;
+                    background-color: $redcolor;
+                    height: 10px;
+                }
+            }
+
+            .svv-bannertabs-linklistitem-dropdown {
+                position: relative;
+
+                &:hover {
+                    .svv-bannertabs-link-content {
+                        display: block;
+                    }
+                }
+
+                .svv-bannertabs-link-content {
+                    position: absolute;
+                    top: 100%;
+                    top: calc(100% + 10px);
+                    width: 100%;
+                    background-color: #fff;
+                    z-index: 99;
+                    box-shadow: 0px 10px 10px #00000029;
+                    display: none;
+
+                    a {
+                        display: block;
+                        padding: 8px 10px;
+                        border-bottom: 1px solid #ccc;
+                        width: 100%;
+                        text-decoration: none;
+
+                        a:last-child {
+                            border-bottom: 0px;
+                        }
+                    }
+
+                    a.active {
+                        color: $redcolor;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width:1023px) {
+
+        .svv-bannertabs-links-wrap-lg {
+            @include bannertabscollapsed;
+        }
+    }
+
+    @media (max-width:767px) {
+        .svv-bannertabs-links-wrap-md {
+            @include bannertabscollapsed;
+        }
+    }
+
+    .svv-bannertabs-content-containerfluid {
+
+        .svv-bannertabs-content {
+            display: none;
+        }
+
+        //active
+        .svv-bannertabs-content.active {
+            display: block;
+        }
+    }
+
+}
+
+//++++++++++++++++++++++++++++++++++++ SVV BANNER TABS CSS ENDS +++++++++++++++++++++++++++
+
+
+//++++++++++++++++++++++++++++++++++++ SVV USERCARDS CSS STARTS +++++++++++++++++++++++++++
+.svvusercard {
+    width: 100%;
+    border-radius: 0px;
+    margin-bottom: 50px;
+    position: relative;
+    padding: 30px;
+    background-color: #f5f6f6;
+    border-bottom: 2px solid #fff0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    transition: 0.5s;
+
+    &:hover {
+        background-color: #fff;
+        box-shadow: 0 3px 20px 0 #00000029;
+    }
+
+    .svvusercard-imgwrap {
+        width: 240px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .svvusercard-text {
+        width: calc(100% - 270px);
+
+        h3 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        .svvusercard-collapsebtn {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            button.svv-btn {
+                border: 1px solid #000 !important;
+
+                &:before {
+                    display: none;
+                }
+
+                i {
+                    color: #000 !important;
+                }
+
+                i:nth-child(1) {
+                    display: none;
+                }
+
+                i:nth-child(2) {
+                    display: block;
+                }
+            }
+
+            button.svv-btn.collapsed {
+
+                i:nth-child(1) {
+                    display: block;
+                }
+
+                i:nth-child(2) {
+                    display: none;
+                }
+            }
+
+            button.svv-link {
+                span:nth-child(1) {
+                    display: none;
+                }
+
+                span:nth-child(2) {
+                    display: block;
+                }
+            }
+
+            button.svv-link.collapsed {
+                span:nth-child(1) {
+                    display: block;
+                }
+
+                span:nth-child(2) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.svvusercard-black {
+    border-bottom: 2px solid #00000066;
+
+    &:hover {
+        border-bottom: 2px solid #000000;
+    }
+}
+
+.svvusercard-green {
+    border-bottom: 2px solid #26701266;
+
+    &:hover {
+        border-bottom: 2px solid #267012 !important;
+    }
+
+    .svvusercard-text {
+        .svvusercard-collapsebtn {
+            button.svv-btn {
+                border: 1px solid #267012 !important;
+
+                i {
+                    color: #267012 !important;
+                }
+            }
+        }
+    }
+}
+
+//++++++++++++++++++++++++++++++++++++ SVV USERCARDS CSS ENDS +++++++++++++++++++++++++++
+
+
+//++++++++++++++++++++++++++++++++++++ SVV USER DIRECTORY CSS STARTS +++++++++++++++++++++++++++
+.svvuserdirinner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .svvuserdir-img {
+        width: 280px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .svvuserdir-text {
+        width: 100%;
+        padding-left: 30px;
+    }
+}
+
+//++++++++++++++++++++++++++++++++++++ SVV USER DIRECTORY CSS ENDS +++++++++++++++++++++++++++
+
+
+// ++++++++++++++++++++++++++++++++++  SVV ACCORDION CSS STARTS ++++++++++++++++++++++++++++++
+.svv-accordion-wrap {
+    .svv-accordion {
+        background-color: #F5F6F6;
+        margin-bottom: 30px;
+
+        .svv-accordion-head {
+            padding: 30px 25px;
+            cursor: pointer;
+            position: relative;
+
+
+            .accordion-plusminus {
+                position: absolute;
+                right: 25px;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 15px;
+                height: 15px;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 15px;
+                    height: 2px;
+                    background-color: #000;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%)
+                }
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 2px;
+                    height: 15px;
+                    background-color: #000;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%)
+                }
+            }
+        }
+
+        .svv-accordion-body {
+            padding: 10px 25px;
+        }
+    }
+
+    .svv-accordion-open {
+        background-color: #ffffff;
+        box-shadow: 0px 8px 16px #00000026;
+
+        .svv-accordion-head {
+            .accordion-plusminus {
+                &:after {
+                    transform: translate(-50%, -50%) rotate(90deg);
+                }
+            }
+        }
+    }
+
+}
+
+
+// ++++++++++++++++++++++++++++++++++  SVV ACCORDION CSS ENDS  +++++++++++++++++++++++++++++++
+
+
+
+// +++++++++++++++++++++++++++++++++ SIDEBAR LINKS SECTION CSS STARTS  +++++++++++++++++++++++
+.sidebar-brownlinkscard {
+    width: 100%;
+    background-color: #a25723;
+    padding: 30px;
+
+    @media (max-width:812px) {
+        padding: 15px;
+    }
+}
+
+.sidebar-boxshadowlinkscard {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0px 0px 10px #00000029;
+}
+
+.sidebarlinkicon {
+    a {
+        position: relative;
+        margin-bottom: 10px;
+        padding: 5px 10px 5px 25px;
+        display: block;
+        overflow: hidden;
+
+        img {
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            left: 0px;
+            top: 10px;
+            transition: 0.5s;
+        }
+    }
+
+}
+
+.sidebarlinkarrow {
+    a {
+        padding: 5px 10px;
+        position: relative;
+        border-bottom: 1px solid #ffffff75;
+        display: block;
+        margin-bottom: 5px;
+        text-decoration: none !important;
+        overflow: hidden;
+
+        &:before {
+            content: "";
+            position: absolute;
+            right: 10px;
+            top: 15px;
+            width: 16px;
+            height: 16px;
+            background: url(../../default_asset/img/icons/white-right-arrow.svg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: -100%;
+            width: 100%;
+            background-color: #fff;
+            height: 1px;
+            transition: 0.5s;
+        }
+    }
+
+    a:hover {
+        &:after {
+            left: 0;
+        }
+    }
+}
+
+
+
+
+// ++++++++++++++++++++++++++++++++++ SIDEBAR LINKS SECTION CSS ENDS  +++++++++++++++++++++++++

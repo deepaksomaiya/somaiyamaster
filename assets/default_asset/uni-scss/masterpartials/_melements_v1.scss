@@ -1,0 +1,927 @@
+.sticky0 {
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
+.h1 {
+    font-size: var(--font38, 38px);
+    line-height: 1.4;
+    color: #b7202e;
+    font-family: $headingff;
+    margin-bottom: 30px;
+}
+
+.h2 {
+    font-size: var(--font28, 28px);
+    line-height: 1.4;
+    color: #b7202e;
+    font-family: $headingff;
+    margin-bottom: 30px;
+}
+
+.h3 {
+    font-size: var(--font24, 24px);
+    line-height: 1.4;
+    color: #000000;
+    font-family: $headingff;
+    margin-bottom: 20px;
+}
+
+//******************************** WIDTHS CSS ***********************************
+
+.w5 {
+    width: 5%;
+}
+
+.w15 {
+    width: 15%;
+}
+
+.w25 {
+    width: 25%;
+}
+
+.w35 {
+    width: 35%;
+}
+
+.w45 {
+    width: 45%;
+}
+
+.w55 {
+    width: 55%;
+}
+
+.w65 {
+    width: 65%;
+}
+
+.w75 {
+    width: 75%;
+}
+
+.w85 {
+    width: 85%;
+}
+
+.w95 {
+    width: 95%;
+}
+
+.w10 {
+    width: 10%;
+}
+
+.w20 {
+    width: 20%;
+}
+
+.w30 {
+    width: 30%;
+}
+
+.w40 {
+    width: 40%;
+}
+
+.w50 {
+    width: 50%;
+}
+
+.w60 {
+    width: 60%;
+}
+
+.w70 {
+    width: 70%;
+}
+
+.w80 {
+    width: 80%;
+}
+
+.w90 {
+    width: 90%;
+}
+
+.w100 {
+    width: 100%;
+}
+
+//******************************** WIDTHS CSS ***********************************
+
+
+// ****************************** ANCHOR LINK START ******************************
+
+.simple-link:before {
+    content: "";
+    background-image: url(../../default_asset/img/footer/Sprite-icon.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 18px;
+    float: right;
+    background-position: -572px -24px;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+
+.svv-link,
+.blue-link {
+    text-decoration: underline;
+    font-family: "Firasans-Regular";
+    color: $linkblue;
+    transition: 0.5s;
+    background-color: #fff0;
+    border: 0px;
+    padding: 0px;
+    outline: none !important;
+
+    span {
+        color: $linkblue;
+    }
+
+    &:hover {
+        color: $linkdarkblue;
+        text-decoration: none;
+
+        span {
+            color: $linkdarkblue;
+        }
+    }
+
+    img {
+        height: 15px;
+        width: 15px;
+        margin-left: 4px;
+    }
+}
+
+.svv-i-link {
+    text-decoration: underline;
+    font-family: "Firasans-Regular";
+    color: $whitecolor;
+    transition: 0.5s;
+    background-color: #fff0;
+    border: 0px;
+    padding: 0px;
+
+    &:hover {
+        text-decoration: none;
+        color: #fff !important;
+    }
+
+    img {
+        height: 15px;
+        width: 15px;
+        margin-left: 4px;
+        filter: invert(1);
+    }
+}
+
+// ****************************** ANCHOR LINK END ******************************
+
+
+// ****************************** BUTTONS START ******************************
+.svv-btn {
+    padding: 8px 35px;
+    text-align: center;
+    position: relative;
+    text-decoration: none !important;
+    overflow: hidden !important;
+    display: inline-block;
+    transition: 0.5s;
+    vertical-align: top;
+    border: 1px solid #000;
+    background-color: #ccc;
+    cursor: pointer;
+    outline: none !important;
+
+    span,
+    i {
+        z-index: 1;
+        position: relative;
+        transition: 0.5s;
+        line-height: 1 !important;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 9;
+        z-index: 0;
+        top: 0;
+        left: -100%;
+        transition: 0.5s;
+    }
+
+}
+
+// Button Colors
+.svv-redbtn {
+    background-color: $redcolor;
+    border: 1px solid $redcolor;
+
+    span,
+    i {
+        color: #fff;
+    }
+
+    &:before {
+        background-color: $grey;
+    }
+
+    &:hover {
+        border: 1px solid $grey;
+
+        &:before {
+            content: "";
+            left: 0;
+        }
+
+        span,
+        i {
+            color: #fff;
+        }
+    }
+}
+
+.svv-greybtn {
+    background: $grey;
+    border: 1px solid $grey;
+
+    span,
+    i {
+        color: #ffffff;
+    }
+
+    &:before {
+        background-color: $redcolor;
+    }
+
+    &:hover {
+        border: 1px solid $redcolor;
+
+        &:before {
+            content: "";
+            left: 0;
+        }
+
+        span,
+        i {
+            color: #fff;
+        }
+    }
+}
+
+.svv-i-greybtn {
+    background: #fff0;
+    border: 1px solid $grey;
+
+    span,
+    i {
+        color: $grey;
+    }
+
+    &:before {
+        content: "";
+        background-color: $redcolor;
+    }
+
+    &:hover {
+        border: 1px solid $redcolor;
+
+        &:before {
+            content: "";
+            left: 0;
+        }
+
+        span,
+        i {
+            color: #fff;
+        }
+    }
+}
+
+//rounded button 
+.svv-btn.rounded {
+    border-radius: 30px !important;
+}
+
+.svv-btn.rounded-sm {
+    border-radius: 10px !important;
+}
+
+// Button Sizes
+.svv-btn.size-sm {
+    padding: 5px 15px;
+}
+
+.svv-btn.size-lg {
+    padding: 15px 35px;
+}
+
+//icons btn
+.svv-iconbtn {
+    height: 59px;
+    width: 59px;
+    padding: 0px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.svv-smiconbtn {
+    height: 45px;
+    width: 45px;
+    padding: 0px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+//text icon btns
+
+.svv-btn {
+    img {
+        height: 15px;
+        position: relative;
+        z-index: 9;
+        transition: 0.5s;
+    }
+
+    img.hoverhide {
+        display: inline-block;
+    }
+
+    img.hovershow {
+        display: none;
+    }
+
+    &:hover {
+        img.hoverhide {
+            display: none;
+        }
+
+        img.hovershow {
+            display: inline-block;
+        }
+    }
+}
+
+.svv-texticonrightbtn {
+    img {
+        margin-left: 4px;
+    }
+}
+
+.svv-texticonlefttbtn {
+    img {
+        margin-right: 4px;
+    }
+}
+
+// ****************************** BUTTONS ENDS ******************************
+
+
+// ****************************** IMAGES CSS STARTS ******************************
+.userroundshadow {
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px #00000029;
+    border: 6px solid #eeefef;
+
+    img {
+        width: 100%;
+    }
+}
+
+.svv-img-circle {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+
+// ****************************** IMAGES CSS ENDS ******************************
+
+
+// ****************************** FORM CSS STARTS ****************************
+
+.svv-form {
+
+    .formhead {
+        margin-bottom: 15px;
+
+        @media (max-width:767px) {
+            margin-bottom: 10px;
+        }
+    }
+
+    .formsubhead {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 0px 15px;
+    }
+
+    .formrow {
+        display: flex;
+        align-items: stretch;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin: 0px -15px;
+
+        .formgroup {
+            padding: 0px 15px;
+            margin-bottom: 25px;
+            position: relative;
+
+            label.darkf14firamd {
+                color: #58595B !important;
+                margin-bottom: 3px;
+
+                em {
+                    color: #ED1C24;
+                    font-style: initial;
+                }
+            }
+
+            label {
+                .inputinfo-circle {
+                    display: inline-block;
+                    margin-left: 5px;
+                    color: #B7202E;
+                }
+            }
+
+            .cinput {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #00000033;
+                height: 44px;
+
+                &:focus {
+                    border: 1px solid #00000086;
+                }
+            }
+
+            .ctextarea {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #00000033;
+                height: 130px;
+
+                &:focus {
+                    border: 1px solid #00000086;
+                }
+            }
+
+            .select2inputcss {
+                border-radius: 0px;
+                width: 100%;
+            }
+
+            .select2-container--default .select2-selection--multiple {
+                border: 0px !important;
+            }
+
+            .select2-container {
+                width: 100%;
+                min-height: 44px;
+                padding: 0px 10px;
+                border: 1px solid #00000033;
+                border-radius: 0px;
+            }
+
+            .note {
+                font-size: 12px;
+                margin-top: 10px;
+
+                .fontred {
+                    font-size: 12px;
+                    color: #ee1c24;
+                }
+            }
+
+            .captchaflex {
+                display: flex;
+                align-items: stretch;
+                justify-content: space-between;
+
+                input {
+                    width: 65%;
+                }
+
+                .image_captcha {
+                    width: calc(calc(100% - 67%) - 44px);
+                    background-color: #f3f3f3;
+                    border: 1px solid #ccc;
+                }
+
+                .captcha-refresh {
+                    width: 44px;
+                    height: 44px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #f3f3f3;
+                    border: 1px solid #ccc;
+
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+
+            }
+
+        }
+
+        // RADIO N CHECKED CSS
+
+        .rcinputgroup {
+            position: relative;
+            padding: 10px 0px;
+            display: inline-flex;
+            margin-right: 20px;
+            cursor: pointer;
+
+            input {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                cursor: pointer;
+            }
+
+            span {
+                pointer-events: none;
+                flex: 1;
+            }
+
+        }
+
+        .radiogroup {
+            .checkmark {
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                border: 1px solid #58595b;
+                margin-right: 8px;
+                margin-top: 3px;
+                position: relative;
+                pointer-events: none;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 65%;
+                    height: 65%;
+                    border-radius: 50%;
+                    background-color: #fff;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    display: none;
+                }
+            }
+
+            &:hover {
+                .checkmark {
+                    box-shadow: 0px 0px 5px #00000098;
+                }
+            }
+
+            input:checked+.checkmark {
+                background-color: $formcolor;
+                border: 1px solid $formcolor;
+
+                &:before {
+                    content: "";
+                    display: block;
+                }
+            }
+
+        }
+
+        .checkgroup {
+            .checkmark {
+                width: 20px;
+                height: 20px;
+                border: 1px solid #58595b;
+                margin-right: 8px;
+                margin-top: 3px;
+                position: relative;
+                pointer-events: none;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 45%;
+                    left: 50%;
+                    transform: translate(-50%, -50%) rotate(45deg);
+                    width: 6px;
+                    height: 13px;
+                    border-right: 2px solid #fff;
+                    border-bottom: 2px solid #fff;
+                }
+            }
+
+            &:hover {
+                .checkmark {
+                    box-shadow: 0px 0px 5px #00973c7a;
+                }
+            }
+
+            input:checked+.checkmark {
+                background-color: $formcolor;
+                border: 1px solid $formcolor;
+
+                &:before {
+                    content: "";
+                    display: block;
+                }
+            }
+        }
+
+        // RADIO N CHECKED CSS
+
+
+        //file upload css
+        .fileuploadformgroup {
+            .fileuploadbox {
+                position: relative;
+                display: flex;
+                align-items: stretch;
+                justify-content: space-between;
+                border: 1px solid #00000033;
+
+                input.fileuplaodinput {
+                    position: absolute;
+                    z-index: 9;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
+                    cursor: pointer;
+                }
+
+                .svv-greybtn {
+                    width: 180px;
+                    pointer-events: none;
+                    padding: 7.5px 35px;
+                }
+
+                .fileuplaodnameswrap {
+                    display: flex;
+                    align-items: center;
+                    padding-left: 10px;
+                    pointer-events: none;
+                    width: calc(100% - 180px);
+
+                    span {
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        //file upload css
+
+        //Date Pickers css
+        .dateformgroup {
+            @-moz-document url-prefix() {
+                .forminput {
+                    position: relative;
+
+                    input[type="date"]::-webkit-inner-spin-button,
+                    input[type="date"]::-webkit-calendar-picker-indicator {
+                        -webkit-appearance: none;
+                    }
+
+                    input[type="datetime-local"]::-webkit-inner-spin-button,
+                    input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+                        -webkit-appearance: none;
+                    }
+
+                    &:before {
+                        content: "\f073";
+                        font-family: "FontAwesome";
+                        position: absolute;
+                        top: 8px;
+                        right: 20px;
+                        pointer-events: none;
+                    }
+                }
+            }
+        }
+
+        //Date Pickers css
+
+        // Password Input css
+        .passwordformgroup {
+            .forminput {
+                position: relative;
+
+                .passwordeye {
+                    width: 18px;
+                    height: 18px;
+                    position: absolute;
+                    top: 13px;
+                    right: 10px;
+                    display: flex;
+                    cursor: pointer;
+
+                    &:before {
+                        content: "\f06e";
+                        font-family: "FontAwesome";
+                        line-height: 20px;
+
+                    }
+                }
+            }
+
+            .forminput.active {
+                .passwordeye {
+                    &:before {
+                        content: "\f070";
+                    }
+                }
+            }
+
+        }
+
+        // Password Input css
+
+
+        // switch check
+
+        .switch-check {
+            position: relative;
+            display: inline-block;
+
+            .switch-input {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                left: 0;
+                top: 0;
+                z-index: 9;
+            }
+
+            .switch-toggle {
+                transition: 0.5s;
+                padding: 4px 24px;
+                position: relative;
+                border-radius: 24px;
+                border: 1px solid $grey;
+                text-align: center;
+                margin: 4px 0px;
+
+                .switch-texton {
+                    display: none;
+                    width: 45px;
+                    pointer-events: none;
+                }
+
+                .switch-textoff {
+                    display: inline-block;
+                    width: 45px;
+                    pointer-events: none;
+                }
+
+                .switch-slider {
+                    width: 27px;
+                    height: 27px;
+                    position: absolute;
+                    background-color: $grey;
+                    border-radius: 50%;
+                    left: 3px;
+                    top: 3px;
+                    transition: 0.5s;
+                    pointer-events: none;
+                }
+            }
+
+            .switch-input:checked+.switch-toggle {
+                background-color: $formcolor;
+                border: 1px solid $formcolor;
+            }
+
+            .switch-input:checked+.switch-toggle .switch-texton {
+                display: inline-block;
+                color: #fff;
+            }
+
+            .switch-input:checked+.switch-toggle .switch-textoff {
+                display: none;
+                color: #fff;
+            }
+
+            .switch-input:checked+.switch-toggle .switch-slider {
+                transform: translateX(60px);
+                transition: 0.5s;
+                background-color: #fff;
+            }
+        }
+
+
+
+        // width of formgroups
+        .formgroup.formgroupcol3 {
+            width: calc(100% / 3);
+        }
+
+        .formgroup.formgroupcol4 {
+            width: calc(100% / 4);
+        }
+
+        @media (max-width:992px) {
+
+            .formgroup.w100,
+            .formgroup.w95,
+            .formgroup.w90,
+            .formgroup.w85,
+            .formgroup.w80,
+            .formgroup.w75,
+            .formgroup.w70,
+            .formgroup.w65,
+            .formgroup.w60,
+            .formgroup.w55 {
+                width: 100%;
+            }
+
+            .formgroup.w50,
+            .formgroup.w45,
+            .formgroup.w40,
+            .formgroup.w35,
+            .formgroup.w30,
+            .formgroup.w25,
+            .formgroup.w20,
+            .formgroup.w15,
+            .formgroup.w10,
+            .formgroup.w5 {
+                width: 50%;
+            }
+
+        }
+
+        @media (max-width:767px) {
+            .formgroup.formgroupcol3 {
+                width: 100%;
+            }
+
+            .formgroup.formgroupcol4 {
+                width: calc(100% / 2);
+            }
+        }
+
+        @media (max-width:680px) {
+            .formgroup {
+                width: 100% !important;
+            }
+
+            .formgroup.formgroupcol4 {
+                width: 100%;
+            }
+        }
+
+        // width of formgroups
+
+    }
+}
+
+// ****************************** FORM CSS ENDS ******************************
+
+
+// ****************************** PAGINATION CSS STARTS ******************************
+.pagination {
+    font-size: var(--font16, 16px);
+    font-family: "Fira Sans", sans-serif;
+    margin: 0 0 !important;
+    display: inline-block;
+
+    a {
+        color: #069;
+        padding: 5px 10px;
+        border: 1px solid #e2e2e2;
+        background: #f6f6f7;
+        font-family: "Fira Sans", sans-serif;
+    }
+
+    b {
+        background: #b7202e;
+        padding: 5px 10px;
+        border: 1px solid #b7202e;
+        color: #fff;
+    }
+}
+
+// ****************************** PAGINATION CSS ENDS ******************************
