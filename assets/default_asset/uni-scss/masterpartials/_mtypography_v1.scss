@@ -139,6 +139,14 @@ body {
         }
     }
 
+    .redf38marcellus-mb,
+    .redf36marcellus-mb {
+        margin-bottom: 30px;
+
+        @media (max-width:767px) {
+            margin-bottom: 15px;
+        }
+    }
 
     .redf48marcellus {
         font-family: $headingff;
@@ -158,7 +166,7 @@ body {
         font-family: $headingff;
         font-size: var(--font48, 48px);
         line-height: 1.4;
-        color: $greycolor;
+        color: $grey;
     }
 
     .lightf48marcellus {
@@ -187,7 +195,7 @@ body {
         font-family: $headingff;
         font-size: var(--font38, 38px);
         line-height: 1.4;
-        color: $greycolor;
+        color: $grey;
     }
 
     .lightf38marcellus {
@@ -216,7 +224,7 @@ body {
         font-family: $headingff;
         font-size: var(--font36, 36px);
         line-height: 1.4;
-        color: $greycolor;
+        color: $grey;
     }
 
     .lightf36marcellus {
@@ -245,7 +253,7 @@ body {
         font-family: $headingff;
         font-size: var(--font32, 32px);
         line-height: 1.4;
-        color: $greycolor;
+        color: $grey;
     }
 
     .lightf32marcellus {
@@ -274,7 +282,7 @@ body {
         font-family: $headingff;
         font-size: var(--font28, 28px);
         line-height: 1.4;
-        color: $greycolor;
+        color: $grey;
     }
 
     .lightf28marcellus {
@@ -303,7 +311,7 @@ body {
         font-family: $headingff;
         font-size: var(--font24, 24px);
         line-height: 1.4;
-        color: $greycolor;
+        color: $grey;
     }
 
     .lightf24marcellus {
@@ -335,7 +343,7 @@ body {
         font-family: $paragraphmediumfff;
         font-size: var(--font38, 38px);
         line-height: 1.4;
-        color: $greycolor;
+        color: $grey;
     }
 
     .lightf38firamd {
@@ -364,7 +372,7 @@ body {
         font-family: $paragraphmediumfff;
         font-size: var(--font36, 36px);
         line-height: 1.4;
-        color: $greycolor;
+        color: $grey;
     }
 
     .lightf36firamd {
@@ -393,7 +401,7 @@ body {
         font-family: $paragraphmediumfff;
         font-size: var(--font32, 32px);
         line-height: 1.4;
-        color: $greycolor;
+        color: $grey;
     }
 
     .lightf32firamd {
@@ -422,7 +430,7 @@ body {
         font-family: $paragraphmediumfff;
         font-size: var(--font28, 28px);
         line-height: 1.4;
-        color: $greycolor;
+        color: $grey;
     }
 
     .lightf28firamd {
@@ -451,7 +459,7 @@ body {
         font-family: $paragraphmediumfff;
         font-size: var(--font24, 24px);
         line-height: 1.4;
-        color: $greycolor;
+        color: $grey;
     }
 
     .lightf24firamd {
@@ -480,7 +488,7 @@ body {
         font-family: $paragraphmediumfff;
         font-size: var(--font22, 22px);
         line-height: 1.4;
-        color: $greycolor;
+        color: $grey;
     }
 
     .lightf22firamd {
@@ -509,7 +517,7 @@ body {
         font-family: $paragraphmediumfff;
         font-size: var(--font20, 20px);
         line-height: 1.4;
-        color: $greycolor;
+        color: $grey;
     }
 
     .lightf20firamd {
@@ -538,7 +546,7 @@ body {
         font-family: $paragraphmediumfff;
         font-size: var(--font18, 18px);
         line-height: 1.4;
-        color: $greycolor;
+        color: $grey;
     }
 
     .lightf18firamd {
@@ -567,7 +575,7 @@ body {
         font-family: $paragraphmediumfff;
         font-size: var(--font16, 16px);
         line-height: 1.4;
-        color: $greycolor;
+        color: $grey;
     }
 
     .lightf16firamd {
@@ -596,7 +604,7 @@ body {
         font-family: $paragraphmediumfff;
         font-size: var(--font14, 14px);
         line-height: 1.4;
-        color: $greycolor;
+        color: $grey;
     }
 
     .lightf14firamd {
@@ -625,7 +633,7 @@ body {
         font-family: $paragraphmediumfff;
         font-size: var(--font11, 11px);
         line-height: 1.4;
-        color: $greycolor;
+        color: $grey;
     }
 
     .lightf11firamd {
@@ -636,8 +644,42 @@ body {
     }
 
     //========================================
+    //           FiraSans
+    //========================================
+
+    .redf13fira {
+        font-family: $firasans;
+        font-size: var(--font13, 13px);
+        line-height: 1.6;
+        color: $redcolor;
+    }
+
+    .darkf13fira {
+        font-family: $firasans;
+        font-size: var(--font13, 13px);
+        line-height: 1.6;
+        color: $paracolor;
+    }
+
+    .greyf13fira {
+        font-family: $firasans;
+        font-size: var(--font13, 13px);
+        line-height: 1.6;
+        color: $grey;
+    }
+
+    .lightf13fira {
+        font-family: $firasans;
+        font-size: var(--font13, 13px);
+        line-height: 1.6;
+        color: $whitecolor;
+    }
+
+
+    //========================================
     //           FiraSans Regular
     //========================================
+
     .redf24firarg {
         font-family: $paragraphff;
         font-size: var(--font24, 24px);
@@ -656,7 +698,7 @@ body {
         font-family: $paragraphff;
         font-size: var(--font24, 24px);
         line-height: 1.7;
-        color: $greycolor;
+        color: $grey;
     }
 
     .lightf24firarg {
@@ -685,7 +727,7 @@ body {
         font-family: $paragraphff;
         font-size: var(--font22, 22px);
         line-height: 1.7;
-        color: $greycolor;
+        color: $grey;
     }
 
     .lightf22firarg {
@@ -714,7 +756,7 @@ body {
         font-family: $paragraphff;
         font-size: var(--font20, 20px);
         line-height: 1.7;
-        color: $greycolor;
+        color: $grey;
     }
 
     .lightf20firarg {
@@ -743,7 +785,7 @@ body {
         font-family: $paragraphff;
         font-size: var(--font18, 18px);
         line-height: 1.7;
-        color: $greycolor;
+        color: $grey;
     }
 
     .lightf18firarg {
@@ -772,7 +814,7 @@ body {
         font-family: $paragraphff;
         font-size: var(--font16, 16px);
         line-height: 1.7;
-        color: $greycolor;
+        color: $grey;
     }
 
     .lightf16firarg {
@@ -801,7 +843,7 @@ body {
         font-family: $paragraphff;
         font-size: var(--font14, 14px);
         line-height: 1.7;
-        color: $greycolor;
+        color: $grey;
     }
 
     .lightf14firarg {

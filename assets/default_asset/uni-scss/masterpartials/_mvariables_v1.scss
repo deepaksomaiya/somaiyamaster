@@ -31,3 +31,29 @@ $headingff : 'Marcellus-Regular';
 $paragraphmediumfff : 'FiraSans-Medium';
 $paragraphff : 'FiraSans-Light';
 $firasans : 'Fira Sans';
+
+// $paragraphff : 'Fira Sans';
+// $firasans : 'Fira Sans';
+
+@mixin flexbetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (max-width:1920px) {
+    :root {
+        --mb3015: 30px;
+        --mb3010: 30px;
+        --mb1510: 15px;
+    }
+}
+
+@media (max-width:767px) {
+    :root {
+        --mb3015: 15px;
+        --mb3010: 10px;
+        --mb1510: 10px;
+    }
+}

@@ -131,7 +131,7 @@
 .blue-link {
     text-decoration: underline;
     font-family: "Firasans-Regular";
-    color: $linkblue;
+    color: $linkblue !important;
     transition: 0.5s;
     background-color: #fff0;
     border: 0px;
@@ -139,7 +139,7 @@
     outline: none !important;
 
     span {
-        color: $linkblue;
+        color: $linkblue !important;
     }
 
     &:hover {
@@ -147,7 +147,7 @@
         text-decoration: none;
 
         span {
-            color: $linkdarkblue;
+            color: $linkdarkblue !important;
         }
     }
 
@@ -411,7 +411,6 @@
 // ****************************** FORM CSS STARTS ****************************
 
 .svv-form {
-
     .formhead {
         margin-bottom: 15px;
 
@@ -503,6 +502,12 @@
                     font-size: 12px;
                     color: #ee1c24;
                 }
+            }
+
+            .error {
+                font-size: 12px;
+                color: #ee1c24;
+                font-family: 'Firasans-Regular';
             }
 
             .captchaflex {
@@ -628,6 +633,7 @@
                     height: 13px;
                     border-right: 2px solid #fff;
                     border-bottom: 2px solid #fff;
+                    display: none;
                 }
             }
 
@@ -925,3 +931,98 @@
 }
 
 // ****************************** PAGINATION CSS ENDS ******************************
+
+
+.img-fit {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.m3010 {
+    margin-bottom: 30px;
+
+    @media (max-width:767px) {
+        margin-bottom: 10px;
+    }
+}
+
+.m2510 {
+    margin-bottom: 25px;
+
+    @media (max-width:767px) {
+        margin-bottom: 10px;
+    }
+}
+
+.m2010 {
+    margin-bottom: 20px;
+
+    @media (max-width:767px) {
+        margin-bottom: 10px;
+    }
+}
+
+.m1510 {
+    margin-bottom: 15px;
+
+    @media (max-width:767px) {
+        margin-bottom: 10px;
+    }
+}
+
+/* width */
+.cutomscrollbar {
+    padding-right: 4px;
+}
+
+.cutomscrollbar::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+.cutomscrollbar::-webkit-scrollbar-track {
+    background: #f1f1f172;
+    border-radius: 10px;
+}
+
+/* Handle */
+.cutomscrollbar::-webkit-scrollbar-thumb {
+    background: #8888888e;
+}
+
+/* Handle on hover */
+.cutomscrollbar::-webkit-scrollbar-thumb:hover {
+    background: #5555558c;
+}
+
+// ****************** SVV Loader **************************
+.svv-loader-bg {
+    position: absolute;
+    z-index: 99999999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(255, 255, 255, .8);
+    text-align: center;
+    width: 100%;
+    height: 350px;
+
+    #loader {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 200px;
+    }
+}
+
+// ****************** SVV Loader **************************

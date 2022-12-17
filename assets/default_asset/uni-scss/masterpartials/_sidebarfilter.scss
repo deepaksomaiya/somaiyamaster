@@ -1,0 +1,363 @@
+body.overflow-hidden {
+    overflow: hidden;
+}
+
+.filter-customcheckbox {
+    .formgroup {
+        max-height: 150px;
+        overflow-y: auto;
+    }
+
+    .forminput {
+        .rcinputgroup {
+            padding: 0 !important;
+            margin-bottom: 10px !important;
+            margin-right: 0 !important;
+        }
+
+        .darkf14firarg {
+            line-height: 1.9;
+            font-family: $firasans !important;
+        }
+
+        &:last-child {
+            .rcinputgroup {
+                margin-bottom: 0px !important;
+            }
+        }
+    }
+
+    .root-formcolor-green {
+        .checkgroup {
+            input:checked+.checkmark {
+                background-color: #fff !important;
+            }
+
+            &:hover {
+                .checkmark {
+                    box-shadow: 0px 0px 5px #00973D !important;
+                }
+            }
+
+            .checkmark {
+                border: 1px solid #00973D !important;
+
+                &:before {
+                    border-right: 2px solid #00973D !important;
+                    border-bottom: 2px solid #00973D !important;
+                }
+            }
+
+            &:hover {
+                .checkmark {
+                    box-shadow: 0px 0px 5px #00973c94;
+                }
+            }
+        }
+    }
+
+    .root-formcolor-red {
+        .checkgroup {
+            input:checked+.checkmark {
+                background-color: #fff !important;
+            }
+
+            &:hover {
+                .checkmark {
+                    box-shadow: 0px 0px 5px #B7202E !important;
+                }
+            }
+
+            .checkmark {
+                border: 1px solid #B7202E !important;
+
+                &:before {
+                    border-right: 2px solid #B7202E !important;
+                    border-bottom: 2px solid #B7202E !important;
+                }
+            }
+
+            &:hover {
+                .checkmark {
+                    box-shadow: 0px 0px 5px #9700007a;
+                }
+            }
+        }
+
+    }
+
+    .root-formcolor-grey {
+        .checkgroup {
+            &:hover {
+                .checkmark {
+                    box-shadow: 0px 0px 5px #58595B !important;
+                }
+            }
+
+            input:checked+.checkmark {
+                background-color: #fff !important;
+            }
+
+            .checkmark {
+                border: 1px solid #58595B !important;
+
+                &:before {
+                    border-right: 2px solid #58595B !important;
+                    border-bottom: 2px solid #58595B !important;
+                }
+            }
+
+            &:hover {
+                .checkmark {
+                    box-shadow: 0px 0px 5px #9700007a;
+                }
+            }
+        }
+
+    }
+}
+
+//========================FILTER LISTING LAYOUT  ===================
+.svv-filterlistingwrap {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .filter-aside-col {
+        width: 24%;
+
+        @media(max-width:992px) {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 99999;
+            background: #0005;
+            padding: 5%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            display: none;
+            overflow: auto;
+
+            .filter-aside {
+                background: #fff;
+                padding: 2rem 2rem 2rem 2rem;
+                overflow: auto;
+                width: 100%;
+
+                @media (max-width:767px) {
+                    padding: 1rem;
+                }
+
+                .formfilterhead {
+                    display: none;
+
+                    @media (max-width:992px) {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    .filterlisting-seprator {
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media(max-width:992px) {
+            width: 100%;
+        }
+
+        .vline {
+            background-color: #58595B33;
+            height: 100%;
+            width: 1px;
+
+            @media(max-width:992px) {
+                width: 100%;
+                height: 1px;
+                margin: 30px 0px;
+            }
+
+            @media(max-width:767px) {
+                width: 100%;
+                height: 1px;
+                margin: 10px 0px;
+            }
+
+        }
+    }
+
+    .listing-content-col {
+        width: calc(76% - 40px);
+
+        @media(max-width:992px) {
+            width: 100%;
+        }
+    }
+}
+
+//========================FILTER LISTING LAYOUT  ===================
+
+//========================FILTER LISTING FILTER COL  ===================
+.CR-filter-dropdown {
+    margin-bottom: 20px;
+
+    .forminput {
+        position: relative;
+
+        .cinput {
+            border: 1px solid #58595B33 !important;
+            padding: 15px 10px 15px 15px !important;
+            height: auto !important;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            text-indent: 1px;
+            text-overflow: '';
+
+        }
+
+        .select-angleupdown {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 8px;
+            height: 8px;
+            transition: 0.5s;
+
+            &:before {
+                content: "";
+                position: absolute;
+                width: 8px;
+                height: 1px;
+                background-color: #000;
+                top: 100%;
+                transform: rotate(45deg) translate(-50%, -50%);
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                width: 1px;
+                height: 8px;
+                background-color: #000;
+                left: 50%;
+                top: 50%;
+                transform: rotate(45deg) translate(-50%, -50%);
+            }
+        }
+    }
+
+    .select-angleupdown-toggler.toggledropdown {
+        .select-angleupdown {
+            transform: translate(-50%, -50%) rotate(180deg);
+        }
+    }
+}
+
+.CR-filter-checkbox {
+    border: 1px solid #58595b33;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+
+.CR-filter-accordion {
+    margin-bottom: 20px;
+
+    .svv-accordion-wrap {
+        .svv-accordion {
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin-bottom: 0px;
+            }
+
+            .svv-accordion-head {
+                padding: 15px 10px 15px 15px;
+
+                .accordion-angleupdown {
+                    right: 15px;
+                }
+            }
+
+            .svv-accordion-body {
+                border-top: 1px solid #58595b33;
+                padding: 10px 15px;
+            }
+        }
+    }
+
+}
+
+.CR-filter-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .svv-link-grey {
+        color: #58595B !important;
+    }
+
+    .close-popup {
+        display: none;
+
+        @media (max-width:992px) {
+            display: block;
+        }
+    }
+
+}
+
+//========================FILTER LISTING FILTER COL  ===================
+
+//========================CONTENT LISTING ==============================
+
+.listing-content {
+    position: relative;
+
+    .listing-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0px;
+        border-bottom: 8px solid #F5F6F6;
+        margin-bottom: var(--mb3015, 30px);
+
+        .filterbtn {
+            display: none;
+
+            @media (max-width:992px) {
+                display: block;
+            }
+        }
+    }
+
+    .listing-body {
+        .listing-row {
+            .listing-col {
+                margin-bottom: var(--mb3010, 20px);
+
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+
+                .classroaster-card {
+                    padding: 25px 15px;
+
+                    @media (max-width:992px) {
+                        padding: 15px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+//========================CONTENT LISTING ==============================

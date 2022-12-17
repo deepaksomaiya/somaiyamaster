@@ -5,9 +5,12 @@
 // SVV COMMON TABS CSS
 // SVV BANNER TABS CSS
 // SVV USERCARDS CSS
+// SVV - SIRAC USERCARDS CSS
 // SVV USER DIRECTORY CSS 
 // SVV ACCORDION CSS 
 // SIDEBAR LINKS SECTION CSS
+// HEXAGON GRID SECTION CSS
+// SVV ACCORDION CSS
 // ************Search Text ***************** 
 
 // ===================================== SECTIONS CSS START ==================================
@@ -78,7 +81,7 @@
             }
 
             @media screen and (max-width: 768px) {
-                font-size: 16px;
+                font-size: var(--font16, 16px);
                 line-height: 26px;
 
                 &:before {
@@ -112,9 +115,6 @@
             }
 
             @media screen and (max-width: 768px) {
-                font-size: 16px;
-                line-height: 26px;
-
                 &:before {
                     top: 8px;
                 }
@@ -140,9 +140,6 @@
             }
 
             @media screen and (max-width: 768px) {
-                font-size: 16px;
-                line-height: 26px;
-
                 &:before {
                     top: 4px;
                 }
@@ -227,19 +224,25 @@
     h4,
     h5,
     h6 {
-        font-family: "FiraSans-Medium";
+        font-family: "FiraSans-Medium" !important;
     }
 
     p {
-        font-size: var(--font18, 18px);
-        font-family: $paragraphff;
+        font-size: var(--font18, 18px) !important;
+        font-family: $paragraphff !important;
+        margin-bottom: 15px;
+    }
+
+    span {
+        font-size: var(--font18, 18px) !important;
+        font-family: $paragraphff !important;
         margin-bottom: 15px;
     }
 
     b,
     strong {
         color: #000;
-        font-family: "FiraSans-Medium", sans-serif;
+        font-family: "FiraSans-Medium", sans-serif !important;
     }
 
     ol {
@@ -1291,7 +1294,7 @@
 //++++++++++++++++++++++++++++++++++++ SVV BANNER TABS CSS ENDS +++++++++++++++++++++++++++
 
 
-//++++++++++++++++++++++++++++++++++++ SVV USERCARDS CSS STARTS +++++++++++++++++++++++++++
+//++++++++++++++++++++++++++++++++++++ SVV USERCARDS CSS STARTS +++++++++++++++++++++++++
 .svvusercard {
     width: 100%;
     border-radius: 0px;
@@ -1418,6 +1421,181 @@
 
 //++++++++++++++++++++++++++++++++++++ SVV USERCARDS CSS ENDS +++++++++++++++++++++++++++
 
+//++++++++++++++++++++++++++++++++++++ SIRAC USERCARDS CSS STARTS +++++++++++++++++++++++++
+
+.svv-siracteamcard {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 30px 0px;
+
+    @media (max-width:768px) {
+        margin: 10px 0px;
+    }
+
+    .stc-left {
+        width: 15%;
+
+        @media (max-width:912px) {
+            width: 25%;
+        }
+
+        @media (max-width:767px) {
+            width: 100%;
+            margin: auto;
+            text-align: center;
+
+            img {
+                max-width: 200px;
+            }
+
+            .social {
+                margin-bottom: 10px;
+            }
+        }
+
+
+    }
+
+    .stc-right {
+        width: calc(100% - 15% - 30px);
+
+        @media (max-width:912px) {
+            width: calc(100% - 25% - 10px);
+        }
+
+        @media (max-width:767px) {
+            width: 100%;
+        }
+
+        .stc-shortdesc {
+            @include flexbetween;
+            padding-top: 15px 2px 0px 2px;
+
+            @media (max-width:767px) {
+                flex-wrap: wrap;
+                text-align: center;
+
+                .stcnames {
+                    width: 100%;
+                }
+
+                .stcprojectlink {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+        }
+
+        .stc-description {
+            margin-top: 15px;
+            border: 8px solid #70707033;
+            padding: 20px 25px 20px 30px;
+
+            @media (max-width:767px) {
+                padding: 15px;
+                border: 1px solid #70707033;
+                background-color: #fafafa;
+            }
+
+            .showmoreless {
+                p {
+                    margin-bottom: 10px;
+                }
+
+                .svvusercard-collapsebtn {
+                    .svv-link.collapsed {
+                        span:nth-child(1) {
+                            display: block !important;
+                        }
+
+                        span:nth-child(2) {
+                            display: none !important;
+                        }
+                    }
+
+                    .svv-link {
+                        span:nth-child(1) {
+                            display: none;
+                        }
+
+                        span:nth-child(2) {
+                            display: block;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .areaofinterest {
+            display: flex;
+            align-items: stretch;
+            justify-content: flex-start;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+
+            .areaofinterest-left {
+                width: 120px;
+
+                @media (max-width:767px) {
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .areaofinterest-right {
+                width: calc(100% - 130px);
+                display: flex;
+                align-items: stretch;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+
+                @media (max-width:767px) {
+                    width: 100%;
+                }
+
+                ul {
+                    li {
+                        display: inline-block;
+                        position: relative;
+                        padding: 0px 20px 5px 20px;
+
+                        @media (max-width:767px) {
+                            padding: 0px 10px 10px 10px;
+                        }
+
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            width: 5px;
+                            height: 5px;
+                            background-color: #58595b;
+                            border-radius: 50%;
+                            top: 8px;
+                            left: 10px;
+
+                            @media (max-width:767px) {
+                                left: 0;
+                            }
+
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+}
+
+//++++++++++++++++++++++++++++++++++++ SIRAC USERCARDS CSS STARTS +++++++++++++++++++++++++
+
+
 
 //++++++++++++++++++++++++++++++++++++ SVV USER DIRECTORY CSS STARTS +++++++++++++++++++++++++++
 .svvuserdirinner {
@@ -1444,6 +1622,112 @@
 
 // ++++++++++++++++++++++++++++++++++  SVV ACCORDION CSS STARTS ++++++++++++++++++++++++++++++
 .svv-accordion-wrap {
+    .svv-accordion {
+        margin-bottom: 10px;
+
+        .svv-accordion-head {
+            padding: 10px 25px;
+            cursor: pointer;
+            position: relative;
+
+            .accordion-plusminus {
+                position: absolute;
+                right: 25px;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 10px;
+                height: 10px;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 10px;
+                    height: 1px;
+                    background-color: #000;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%)
+                }
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 1px;
+                    height: 10px;
+                    background-color: #000;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%)
+                }
+            }
+
+            .accordion-angleupdown {
+                position: absolute;
+                right: 25px;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 8px;
+                height: 8px;
+                transition: 0.5s;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 8px;
+                    height: 1px;
+                    background-color: #000;
+                    top: 100%;
+                    transform: rotate(45deg) translate(-50%, -50%)
+                }
+
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 1px;
+                    height: 8px;
+                    background-color: #000;
+                    left: 50%;
+                    top: 50%;
+                    transform: rotate(45deg) translate(-50%, -50%)
+                }
+            }
+        }
+
+        .svv-accordion-body {
+            padding: 10px 25px;
+        }
+    }
+
+    .svv-accordion-open {
+        .svv-accordion-head {
+            .accordion-plusminus {
+                &:before {
+                    background-color: $redcolor;
+                }
+
+                &:after {
+                    background-color: $redcolor;
+                    transform: translate(-50%, -50%) rotate(90deg);
+                }
+            }
+
+            .accordion-angleupdown {
+                transform: rotate(180deg);
+
+                &:before {
+                    background-color: $redcolor;
+                }
+
+                &:after {
+                    background-color: $redcolor;
+                }
+            }
+        }
+    }
+}
+
+
+.svv-accordion-wrap.faq-accordion {
     .svv-accordion {
         background-color: #F5F6F6;
         margin-bottom: 30px;
@@ -1497,15 +1781,18 @@
 
         .svv-accordion-head {
             .accordion-plusminus {
+                &:before {
+                    background-color: $redcolor;
+                }
+
                 &:after {
                     transform: translate(-50%, -50%) rotate(90deg);
+                    background-color: $redcolor;
                 }
             }
         }
     }
-
 }
-
 
 // ++++++++++++++++++++++++++++++++++  SVV ACCORDION CSS ENDS  +++++++++++++++++++++++++++++++
 
@@ -1590,7 +1877,154 @@
     }
 }
 
+// ++++++++++++++++++++++++++++ SIDEBAR LINKS SECTION CSS ENDS  +++++++++++++++++++++++++
 
+// ++++++++++++++++++++++++++++ HEXAGON GRID SECTION CSS STARTS  +++++++++++++++++++++++++
+.hexagongrid {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+    margin-top: 50px;
 
+    @media (max-width:767px) {
+        padding: 0px 40px;
+    }
 
-// ++++++++++++++++++++++++++++++++++ SIDEBAR LINKS SECTION CSS ENDS  +++++++++++++++++++++++++
+    .hexagongrid-item {
+        padding: 50px 0px;
+        position: relative;
+        width: calc(100% / 6);
+        aspect-ratio: 1.1;
+        margin-bottom: 50px;
+
+        @media (max-width:1024px) {
+            width: calc(100% / 4);
+        }
+
+        @media (max-width:768px) {
+            width: calc(100% / 3);
+        }
+
+        @media (max-width:480px) {
+            width: calc(100% / 2);
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-image: url(../../sirac/img/home/polygon-transperent.png);
+            background-size: 100% 100%;
+            height: 115%;
+            width: 115%;
+        }
+
+        .hexagongrid-item-inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            width: calc(100% - 30px);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            p {
+                text-align: center;
+                padding: 0px 10px;
+            }
+        }
+
+        &:hover {
+            &:before {
+                background-image: url(../../sirac/img/home/polygon-grey.png);
+            }
+
+            .hexagongrid-item-inner {
+                p {
+                    color: #fff;
+                }
+            }
+        }
+
+    }
+
+    .hexagongrid-item:nth-child(even) {
+        top: 105px;
+
+        @media (max-width:768px) {
+            top: 0px;
+        }
+
+        @media (max-width:480px) {
+            top: 110px;
+        }
+
+        &:before {
+            background-image: url("../../sirac/img/home/polygon-grey.png");
+        }
+
+        .hexagongrid-item-inner {
+            p {
+                color: #fff;
+            }
+        }
+
+        &:hover {
+            &:before {
+                background-image: url("../../sirac/img/home/polygon-transperent.png");
+            }
+
+            .hexagongrid-item-inner {
+                p {
+                    color: #58595b;
+                }
+            }
+        }
+    }
+
+    @media (min-width:481px) and (max-width:768px) {
+        .hexagongrid-item:nth-child(3n - 1) {
+            top: 110px
+        }
+    }
+}
+
+// ++++++++++++++++++++++++++++ HEXAGON GRID SECTION CSS STARTS  +++++++++++++++++++++++++
+
+// ++++++++++++++++++++++++++++ SVV ACCORDIONS STARTS  ++++++++++++++++++++++++++++++++
+
+.svv-accordion {
+    border: 1px solid #58595B33;
+    margin-bottom: 10px;
+
+    .svv-accordionhead {
+        position: relative;
+        padding: 10px;
+
+        &:before {
+            content: "\f107";
+            position: absolute;
+            width: 13px;
+            font-family: FontAwesome;
+            right: 14px;
+            font-weight: bold;
+            font-size: var(--font22, 22px);
+            line-height: 1;
+        }
+    }
+
+    .svv-accordionbody {
+        padding: 10px;
+        display: none;
+    }
+}
+
+.svv-accordion.active {}
+
+// ++++++++++++++++++++++++++++ SVV ACCORDIONS ENDS  ++++++++++++++++++++++++++++++++++

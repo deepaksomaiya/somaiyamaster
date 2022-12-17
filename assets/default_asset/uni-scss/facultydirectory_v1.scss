@@ -1,0 +1,58 @@
+@import "masterpartials/mvariables_v1";
+@import "masterpartials/sidebarfilter";
+
+//========================MAIN SEARCH ============================
+@media (max-width:1920px) {
+    :root {
+        --mainsearchheight: 52px;
+    }
+}
+
+@media (max-width:1920px) {
+    :root {
+        --mainsearchheight: 42px;
+    }
+}
+
+.mainpagesearch {
+    width: 100%;
+    margin-bottom: 45px;
+    position: relative;
+
+    @media (max-width:767px) {
+        margin-bottom: 20px;
+    }
+
+    .formgroup {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+
+        .searchinput {
+            font-family: $firasans !important;
+            font-size: var(--font18, 18px);
+            width: 100%;
+            border: 1px solid #58595B;
+            height: var(--mainsearchheight);
+            padding: 10px calc(var(--mainsearchheight, 52px) + 10px) 10px 20px;
+
+            ::placeholder {
+                font-family: $firasans;
+                color: #58595B;
+            }
+        }
+
+        .searchsubmit {
+            width: var(--mainsearchheight, 52px);
+            height: var(--mainsearchheight, 52px);
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+
+}
+
+//========================MAIN SEARCH ==============================

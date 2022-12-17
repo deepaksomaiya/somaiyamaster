@@ -1,0 +1,401 @@
+body.overflow-hidden {
+    overflow: hidden;
+}
+
+@import "masterpartials/mvariables_v1";
+@import "masterpartials/sidebarfilter";
+
+
+//========================MAIN SEARCH ============================
+@media (max-width:1920px) {
+    :root {
+        --mainsearchheight: 52px;
+    }
+}
+
+@media (max-width:1920px) {
+    :root {
+        --mainsearchheight: 42px;
+    }
+}
+
+.mainpagesearch {
+    width: 100%;
+    margin-bottom: 45px;
+    position: relative;
+
+    @media (max-width:767px) {
+        margin-bottom: 20px;
+    }
+
+    .formgroup {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+
+        .searchinput {
+            font-family: $firasans !important;
+            font-size: var(--font18, 18px);
+            width: 100%;
+            border: 1px solid #58595B;
+            height: var(--mainsearchheight);
+            padding: 10px calc(var(--mainsearchheight, 52px) + 10px) 10px 20px;
+
+            ::placeholder {
+                font-family: $firasans;
+                color: #58595B;
+            }
+        }
+
+        .searchsubmit {
+            width: var(--mainsearchheight, 52px);
+            height: var(--mainsearchheight, 52px);
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+
+}
+
+//========================MAIN SEARCH ==============================
+
+
+//========================FILTER LISTING CONTENT COL  ===================
+
+.classroaster-card {
+
+    .classroaster-card-head {
+        .darkf22firarg {
+            font-family: $firasans !important;
+            margin-bottom: var(--mb1510, 15px);
+
+            span {
+                font-size: var(--font22, 22px);
+                font-family: "FiraSans-Bold" !important;
+                margin-right: 5px;
+            }
+        }
+
+        .classroaster-tags {
+            .cr-tag {
+                background-color: #F5F6F6;
+                text-align: center;
+                padding: 5px 10px;
+                border-radius: 15px;
+
+                .darkf14firarg {
+                    color: #A25723 !important;
+                    font-family: $firasans;
+                }
+            }
+        }
+    }
+
+    .classroaster-card-body {
+        margin: 30px 0px;
+
+        // ck-editor override
+        .svv-ckeditor {
+
+            p,
+            ul li,
+            ol li,
+            span {
+                font-size: var(--font14, 14px) !important;
+                font-family: "Fira Sans" !important;
+                font-weight: normal;
+            }
+
+        }
+
+        @media (max-width:767px) {
+            margin: 10px 0px;
+        }
+
+        &:last-child {
+            margin-bottom: 0px !important;
+        }
+
+        // overridding the master tabs
+        .svv-horizontaltabs-wrapper {
+            .horizontaltabs-card {
+                .horizontaltabscontentwrap {
+                    padding: 20px;
+
+                    @media (max-width:992px) {
+                        max-width: 100%;
+                        padding: 0px;
+                    }
+                }
+            }
+
+            .horizontaltabslink {
+                .horizontaltabs-nav {
+                    .svvtabs-item {
+                        .svvtabs-link.active {
+                            .darkf18firarg {
+                                font-family: $paragraphmediumfff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // overridding the master tabs
+
+
+
+    }
+}
+
+.tableresponsive {
+    display: block;
+    width: 100%;
+    overflow: auto;
+
+    .classroster-table {
+        width: 100%;
+        border-collapse: collapse;
+
+        tr {
+            position: relative;
+        }
+
+        .tr-blank-row {
+            border: 0px !important;
+
+            td {
+                border: 0px !important;
+                padding: 2px !important;
+            }
+        }
+
+        tr:last-child {
+            &:after {
+                display: none;
+            }
+        }
+
+        tr.tb-green-row {
+            td:first-child {
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 3px;
+                    height: 100%;
+                    background-color: #00973D;
+                    left: 0;
+                    top: 0;
+                }
+            }
+        }
+
+        tr.tb-red-row {
+            td:first-child {
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 3px;
+                    height: 100%;
+                    background-color: #B7202E;
+                    left: 0;
+                    top: 0;
+                }
+            }
+        }
+
+        th {
+            border: 1px solid #DEE2E6;
+            padding: 10px 10px;
+            vertical-align: top;
+
+            span {
+                white-space: nowrap;
+            }
+        }
+
+        td {
+            border: 1px solid #DEE2E6;
+            padding: 10px 10px;
+            vertical-align: top;
+            border-bottom: 1px solid #DEE2E6 !important;
+
+            .darkf14firarg {
+                font-family: $firasans;
+                margin-bottom: 5px;
+            }
+
+            .flexupdown {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+            }
+
+            .icontext {
+                color: #58595B;
+                font-size: 12px;
+                margin-bottom: 0px;
+                font-family: $firasans;
+                margin-top: 40px;
+
+                img {
+                    width: 10px;
+                    margin-right: 3px;
+                    margin-bottom: 2px;
+                }
+            }
+
+            .fac-link {
+                display: block;
+                font-size: var(--font14, 14px);
+                margin-bottom: 5px;
+            }
+
+            .cr-tooltip-wrap {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+
+            .cr-tooltip {
+                position: relative;
+                z-index: 99;
+                width: 24px;
+                text-align: center;
+                cursor: pointer;
+
+                img {
+                    position: relative;
+                    z-index: -1;
+                }
+
+                .cr-tooltip-hover {
+                    padding-top: 5px;
+                    position: fixed;
+                    display: none;
+
+                    .cr-tooltip-hoverinner {
+                        background-color: #58595B;
+                        padding: 5px 5px 5px 5px;
+                        border-radius: 1px;
+                        color: #fff;
+                        text-align: center;
+                        padding-top: 5px;
+
+                        &:before {
+                            content: "";
+                            position: absolute;
+                            top: 5px;
+                            left: 50%;
+                            transform: translate(-50%, -50%) rotate(45deg);
+                            width: 10px;
+                            height: 10px;
+                            background: #58595b;
+                        }
+
+                        h5 {
+                            font-size: 12px;
+                            font-family: $paragraphmediumfff;
+                            color: #fff;
+                            margin-bottom: 5px;
+                            min-width: 140px;
+                            border-bottom: 1px solid #fff5;
+                            line-height: 2;
+                        }
+
+                        .cutomscrollbar {
+                            max-height: 60px;
+                            overflow: auto;
+                        }
+
+                        p {
+                            font-size: 12px;
+                            font-family: $firasans;
+                            color: #fff;
+                            margin-bottom: 0px;
+                            line-height: 20px;
+                        }
+
+                        ul {
+                            list-style: disc !important;
+
+                            li {
+                                font-size: 12px;
+                                color: #fff;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+
+                .cr-tooltip-hover[x-placement="top"] {
+                    padding: 0px 0px 5px 0px !important;
+
+                    .cr-tooltip-hoverinner:before {
+                        top: 95%;
+                    }
+                }
+
+                .cr-tooltip-hover[x-placement="bottom"] {
+                    padding-bottom: 5px;
+                }
+
+                &:hover {
+                    .cr-tooltip-hover {
+                        display: block;
+                    }
+                }
+            }
+
+            .cr-tooltip.bigtooltip {
+                .cr-tooltip-hover {
+                    width: 320px;
+
+                    @media (max-width:380px) {
+                        width: 220px;
+                    }
+                }
+
+                .cr-tooltip-hover[x-placement="top"] {
+                    .cr-tooltip-hoverinner:before {
+                        left: 78%;
+
+                        @media (max-width:1024px) {
+                            left: 67%;
+                        }
+
+                        @media (max-width:380px) {
+                            left: 50%;
+                        }
+                    }
+                }
+
+                .cr-tooltip-hover[x-placement="bottom"] {
+                    .cr-tooltip-hoverinner:before {
+                        left: 78%;
+
+                        @media (max-width:1024px) {
+                            left: 67%;
+                        }
+
+                        @media (max-width:380px) {
+                            left: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .classroster-table.table-responsive-1024 {
+        @media (max-width:1024px) {
+            min-width: 1000px;
+        }
+    }
+}
+
+//========================FILTER LISTING CONTENT COL  ===================

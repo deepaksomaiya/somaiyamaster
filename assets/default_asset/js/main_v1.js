@@ -12,7 +12,6 @@
 // ==================================
 
 
-
 $(window).on('load', function () {
     //************************** HEADER LOCALSTORAGE JS START ****************************
     var hashstring = localStorage.getItem("hashstring");
@@ -416,6 +415,19 @@ $(document).ready(function () {
 
 
     //************************** FORMS JS STARTS *************************** */
+
+    //select custom dropdown
+    $(".select-angleupdown-toggler").click(function () {
+        $(this).toggleClass('toggledropdown');
+    });
+
+    var srollDist = 0;
+
+    $(window).on('scroll', function () {
+        srollDist = $(window).scrollTop();
+    });
+
+
 
     // File Input name adding
     $(".fileuplaodinput").on('change', function () {
